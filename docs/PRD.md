@@ -107,4 +107,7 @@ Logo en SVG, paleta y tipografías (si existen), fotos de producto por tono (bot
    - Carrito: sin upsell.
 3. **Los tonos no se venden por separado.** La carta de color **muestra** los 6 tonos (foto aplicada, nombre, efecto luminiscente), no selecciona una variante. El producto no tiene variantes de color. Los tonos se guardan como metaobjetos "Tono" para editarlos en un solo sitio y usarlos en home y ficha.
 4. **Envío en 24/48 h desde el primer día.** "Preventa" significa **precio de lanzamiento** (79,98 € frente a 99,98 €), no envío diferido. En la web se dirá "precio de lanzamiento" para no dar a entender que el envío se retrasa.
-5. **Paleta:** Rosa Anita `#f48ba0` + blanco, priorizando siempre la elegancia.
+5. **Paleta:** Rosa Anita `#f48ba0` + blanco, priorizando siempre la elegancia. El Rosa profundo `#C2476A` solo en detalles sobre fondo blanco, nunca predominante. Detalle de tokens en CLAUDE.md.
+6. **Tipografía:** opción B, Cormorant + Inter.
+7. **Carta de color:** con interruptor Luz / Oscuridad. Uñas en forma **almendra**.
+8. **Tonos:** Nebulosa Roseta `#C61F6B`, Nebulosa Esmeralda (código pendiente), Capella `#98B41D`, Andrómeda `#15698A`, Orión `#D0419E`, Supernova `#D7442E`.

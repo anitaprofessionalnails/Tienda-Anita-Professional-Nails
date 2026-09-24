@@ -30,10 +30,19 @@ Documentos de referencia (léelos antes de tocar código):
 10. Cuando termines una tarea, resume qué archivos tocaste y qué debo revisar en el preview.
 
 ## Sistema de diseño (resumen; el detalle está en el PRD)
-- Paleta: acento de marca **Rosa Anita `#f48ba0`**. El resto de colores (fondo, texto, superficie y estado) está pendiente de cerrar.
-- Tipografía: display elegante [pendiente] + texto [pendiente]. Escala modular [pendiente].
+- Paleta (validada 24/09/2026):
+  - Blanco `#FFFFFF`: fondo general.
+  - Tinta `#1F1A1C`: textos y titulares.
+  - Rosa Anita `#F48BA0`: botones y detalles. **Nunca como color de texto sobre blanco** (contraste 2,3). Los botones rosa llevan texto Tinta.
+  - Rosa profundo `#C2476A`: solo en detalles pequeños (etiquetas, ahorro, enlaces) sobre fondo blanco. **Nunca predominante.**
+  - Rubor `#FDF1F4`: fondos suaves, con moderación.
+  - Noche `#0E0B0D`: solo para el modo Oscuridad de la carta de color.
+- Tipografía (validada): **Cormorant** (display) + **Inter** (texto), desde el `font_picker` de Shopify. Escala modular [pendiente].
+- Forma de las uñas en muestrarios: **almendra**.
 - Radio, sombras y espaciados: tokens en `assets/nb-tokens.css`.
-- Una sola "pieza memorable": el **selector de tonos** como carta de color física (home y ficha). El resto, silencioso y disciplinado.
+- Una sola "pieza memorable": la **carta de color** con interruptor **Luz / Oscuridad** (home y ficha). En Oscuridad el fondo pasa a Noche y cada tono muestra su foto brillando. Es el único momento oscuro de la web; el resto, silencioso y disciplinado.
+- Tonos del kit: Nebulosa Roseta `#C61F6B`, Nebulosa Esmeralda `[pendiente de confirmar]`, Capella `#98B41D`, Andrómeda `#15698A`, Orión `#D0419E`, Supernova `#D7442E`.
+- Maqueta de referencia validada: https://claude.ai/artifact/34PpY8NivUVGFGwPRrMpyZ
 
 ## Voz de marca
 Cercana, amigable y profesional dentro del nicho: hablamos de tú a una colega del oficio. Usamos el vocabulario técnico con naturalidad ("ojo de gato luminiscente"). Lema: "Tu arte inspira al nuestro". Evitamos el tono cursi de "tienda de belleza" genérica. Palabras prohibidas: [pendiente].
