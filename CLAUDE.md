@@ -3,7 +3,7 @@
 Lee este archivo entero al inicio de cada sesión. Es la fuente de verdad del proyecto.
 
 ## Qué es este proyecto
-Estamos construyendo el tema de Shopify de Anita Professional Nails, una marca española de esmaltes de uñas fundada por Miguel y Anita. Vende un único producto: un pack de 6 esmaltes "ojo de gato luminiscente", dirigido a profesionales de uñas. El objetivo es una tienda premium, editorial y con personalidad propia que NO parezca un tema de Shopify por defecto, y que convierta bien en móvil (más del 75 % del tráfico vendrá de Instagram/TikTok en móvil).
+Estamos construyendo el tema de Shopify de Anita Professional Nails, una marca española de esmaltes de uñas fundada por Miguel y Anita. Vende un único producto: un pack de 6 esmaltes "ojo de gato luminiscente", dirigido a profesionales de uñas y a clientas que se hacen la manicura en casa. El objetivo es una tienda premium, editorial y con personalidad propia que NO parezca un tema de Shopify por defecto, y que convierta bien en móvil (más del 75 % del tráfico vendrá de Instagram/TikTok en móvil).
 
 Documentos de referencia (léelos antes de tocar código):
 - `docs/PRD.md`: requisitos completos de diseño, estructura y páginas. Si algo del PRD choca con una petición mía, pregúntame antes de decidir.
@@ -21,7 +21,7 @@ Documentos de referencia (léelos antes de tocar código):
 1. **Todo editable desde el personalizador.** Cada sección nueva lleva un `{% schema %}` completo con settings, bloques y `presets`, para que Miguel pueda cambiar textos, imágenes y colores sin tocar código. Nada de textos de marca hardcodeados en Liquid.
 2. **Textos de interfaz en `locales/es.json`** (y en `en.default.json` si se añade inglés). Usa `{{ 'clave' | t }}`.
 3. **No rompas Sense por dentro.** Crea las secciones nuevas con el prefijo `nb-` (ej. `sections/nb-hero.liquid`, `assets/nb-base.css`) en lugar de reescribir las originales, salvo que el PRD lo pida. Así las actualizaciones y los diffs quedan limpios.
-4. **Variantes de color = swatches.** Usa el sistema nativo de swatches de Shopify (metaobjetos/metafields de categoría "color") y muestra la imagen de la variante al seleccionar un tono.
+4. **Los tonos no son variantes.** El producto es un kit único de 6 tonos que no se venden por separado. Los tonos son metaobjetos "Tono" (nombre, color, foto aplicada, foto luminiscente) enlazados al producto por metafield, y alimentan la carta de color en home y ficha.
 5. **Rendimiento:** imágenes con `image_url` + `image_tag` con `widths` y `sizes`, y `loading="lazy"` salvo en la primera imagen visible. Nada de librerías pesadas para animaciones. Objetivo: Lighthouse móvil ≥ 85 en home y ficha.
 6. **Accesibilidad:** contraste AA, foco visible, `prefers-reduced-motion`, textos alternativos y botones con nombre accesible.
 7. **Calidad:** ejecuta `shopify theme check` antes de cada commit y arregla los errores.

@@ -98,5 +98,13 @@ Programa de fidelización, suscripción, configurador de manicura y multiidioma.
 ## 12. Contenido que debe entregar la marca antes de construir
 Logo en SVG, paleta y tipografías (si existen), fotos de producto por tono (bote + swatch + mano), textos de producto, INCI y advertencias, políticas legales, 10+ reseñas o UGC e historia de los fundadores.
 
-## Preguntas abiertas
-[Registrar aquí las decisiones pendientes: ver la conversación de arranque del proyecto.]
+## Decisiones tomadas (24/09/2026) — prevalecen sobre el resto del documento
+1. **Público doble:** profesionales con salón **y** clientas particulares que se hacen la manicura en casa. Mensaje: "calidad de salón profesional, también en casa".
+2. **Un único producto:** el kit de 6 esmaltes ojo de gato luminiscente. No hay base, top coat, quitaesmalte ni otros productos. Consecuencias:
+   - Home: se eliminan "Más vendidos" y "Kits / bundle de inicio". En su lugar va el bloque "Qué incluye el kit".
+   - Ficha: se eliminan el cross-sell "Completa tu manicura" y "Otros tonos de la familia".
+   - La plantilla de kit (§7) se fusiona con la ficha: el kit ES el producto.
+   - Carrito: sin upsell.
+3. **Los tonos no se venden por separado.** La carta de color **muestra** los 6 tonos (foto aplicada, nombre, efecto luminiscente), no selecciona una variante. El producto no tiene variantes de color. Los tonos se guardan como metaobjetos "Tono" para editarlos en un solo sitio y usarlos en home y ficha.
+4. **Envío en 24/48 h desde el primer día.** "Preventa" significa **precio de lanzamiento** (79,98 € frente a 99,98 €), no envío diferido. En la web se dirá "precio de lanzamiento" para no dar a entender que el envío se retrasa.
+5. **Paleta:** Rosa Anita `#f48ba0` + blanco, priorizando siempre la elegancia.
