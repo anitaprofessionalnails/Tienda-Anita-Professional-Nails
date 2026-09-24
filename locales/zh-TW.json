@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "nb": {
+    "carta": {
+      "modo_label": "View the shades in light or in the dark",
+      "luz": "Light",
+      "oscuridad": "Dark",
+      "tonos_label": "Shades in the kit"
+    }
+  },
   "general": {
     "password_page": {
       "login_form_heading": "使用密碼進入商店：",
@@ -226,6 +234,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "找不到頁面",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "找不到與「{{ terms }}」相符的結果。請檢查拼字或使用其他字詞。",
       "results_with_count": {
@@ -269,10 +281,6 @@
         "error_heading": "請調整以下內容：",
         "title": "聯絡表單"
       }
-    },
-    "404": {
-      "title": "找不到頁面",
-      "subtext": "404"
     }
   },
   "sections": {

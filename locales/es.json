@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "nb": {
+    "carta": {
+      "modo_label": "Ver los tonos con luz o en oscuridad",
+      "luz": "Luz",
+      "oscuridad": "Oscuridad",
+      "tonos_label": "Tonos del kit"
+    }
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Entrar a la tienda usando contraseña:",

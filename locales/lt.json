@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "nb": {
+    "carta": {
+      "modo_label": "View the shades in light or in the dark",
+      "luz": "Light",
+      "oscuridad": "Dark",
+      "tonos_label": "Shades in the kit"
+    }
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Apsilankyti parduotuvėje naudojant slaptažodį:",
@@ -234,6 +242,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Puslapis nerastas",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Nerasta jokių rezultatų pagal užklausą „{{ terms }}“. Patikrinkite rašybą arba vartokite kitą žodį ar frazę.",
       "page": "Puslapis",
@@ -287,10 +299,6 @@
         "error_heading": "Pakoreguokite toliau pateiktą informaciją.",
         "title": "Kontaktinė forma"
       }
-    },
-    "404": {
-      "title": "Puslapis nerastas",
-      "subtext": "404"
     }
   },
   "sections": {

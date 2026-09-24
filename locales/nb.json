@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "nb": {
+    "carta": {
+      "modo_label": "View the shades in light or in the dark",
+      "luz": "Light",
+      "oscuridad": "Dark",
+      "tonos_label": "Shades in the kit"
+    }
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Gå inn i butikken ved hjelp av passord:",
@@ -226,6 +234,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Siden finnes ikke",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Fant ingen resultater for «{{ terms }}». Kontroller stavemåten, eller bruk et annet ord.",
       "page": "Side",
@@ -269,10 +281,6 @@
         "error_heading": "Juster følgende:",
         "title": "Kontaktskjema"
       }
-    },
-    "404": {
-      "title": "Siden finnes ikke",
-      "subtext": "404"
     }
   },
   "sections": {

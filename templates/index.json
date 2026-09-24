@@ -74,10 +74,89 @@
         "padding_top": 56,
         "padding_bottom": 68
       }
+    },
+    "nb_carta_color": {
+      "type": "nb-carta-color",
+      "blocks": {
+        "tono_roseta": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa Roseta",
+            "descripcion": "Fucsia frambuesa con micro-shimmer plateado.",
+            "color": "#C61F6B",
+            "color_brillo": "#FF2E9A"
+          }
+        },
+        "tono_capella": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Capella",
+            "descripcion": "Verde lima con micro-shimmer dorado.",
+            "color": "#98B41D",
+            "color_brillo": "#D4FF3A"
+          }
+        },
+        "tono_esmeralda": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa Esmeralda",
+            "descripcion": "Verde esmeralda con micro-shimmer plateado.",
+            "color": "#1D7B42",
+            "color_brillo": "#2BFF6A"
+          }
+        },
+        "tono_andromeda": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Andrómeda",
+            "descripcion": "Azul petróleo con micro-shimmer plateado.",
+            "color": "#15698A",
+            "color_brillo": "#2EC8FF"
+          }
+        },
+        "tono_orion": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa de Orión",
+            "descripcion": "Magenta orquídea con micro-shimmer plateado.",
+            "color": "#D0419E",
+            "color_brillo": "#FF3FD0"
+          }
+        },
+        "tono_supernova": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Supernova",
+            "descripcion": "Coral intenso con micro-shimmer dorado.",
+            "color": "#D7442E",
+            "color_brillo": "#FF3B2A"
+          }
+        }
+      },
+      "block_order": [
+        "tono_roseta",
+        "tono_capella",
+        "tono_esmeralda",
+        "tono_andromeda",
+        "tono_orion",
+        "tono_supernova"
+      ],
+      "settings": {
+        "titulo": "Seis tonos que brillan en la oscuridad",
+        "tamano_titulo": "h1",
+        "texto": "<p>Toca un tono para verlo de cerca. Apaga la luz para ver cómo brilla.</p>",
+        "modo_inicial": "luz",
+        "mostrar_compra": true,
+        "nota_kit": "Los seis tonos vienen juntos en el kit.",
+        "color_scheme": "scheme-1",
+        "padding_top": 56,
+        "padding_bottom": 56
+      }
     }
   },
   "order": [
     "image-with-text",
+    "nb_carta_color",
     "featured-collection"
   ]
 }

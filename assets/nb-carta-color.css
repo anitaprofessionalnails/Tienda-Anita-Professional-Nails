@@ -1,0 +1,365 @@
+/* Carta de color: la pieza memorable de la tienda */
+
+.nb-carta {
+  --nb-fondo-modo: rgb(var(--color-background));
+  --nb-texto-modo: rgb(var(--color-foreground));
+  --nb-texto-suave-modo: rgba(var(--color-foreground), 0.7);
+  --nb-borde-modo: rgba(var(--color-foreground), 0.12);
+  --nb-superficie-modo: var(--nb-rubor);
+  background: var(--nb-fondo-modo);
+  color: var(--nb-texto-modo);
+  transition: background-color var(--nb-t-lenta) ease, color var(--nb-t-lenta) ease;
+  display: block;
+}
+
+.nb-carta[data-modo='oscuridad'] {
+  --nb-fondo-modo: var(--nb-noche);
+  --nb-texto-modo: var(--nb-noche-texto);
+  --nb-texto-suave-modo: var(--nb-noche-texto-suave);
+  --nb-borde-modo: rgba(246, 238, 241, 0.14);
+  --nb-superficie-modo: var(--nb-noche-2);
+  background: var(--nb-fondo-modo);
+}
+
+.nb-carta__interior {
+  display: grid;
+  gap: var(--nb-e-6);
+}
+
+/* ---------- Cabecera ---------- */
+.nb-carta__cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--nb-e-4);
+}
+
+.nb-carta__intro {
+  display: grid;
+  gap: var(--nb-e-2);
+  max-width: 56rem;
+}
+
+.nb-carta__titulo {
+  margin: 0;
+  color: var(--nb-texto-modo);
+}
+
+.nb-carta__texto,
+.nb-carta__texto p {
+  margin: 0;
+  color: var(--nb-texto-suave-modo);
+}
+
+.nb-carta__modo {
+  display: inline-flex;
+  gap: 0.2rem;
+  padding: 0.3rem;
+  border: 1px solid var(--nb-borde-modo);
+  border-radius: var(--nb-radio-pastilla);
+}
+
+.nb-carta__modo-btn {
+  font: inherit;
+  font-size: 1.4rem;
+  font-weight: 500;
+  min-height: 4.4rem;
+  padding: 0 var(--nb-e-4);
+  border: 0;
+  border-radius: var(--nb-radio-pastilla);
+  background: transparent;
+  color: var(--nb-texto-suave-modo);
+  cursor: pointer;
+  transition: background-color var(--nb-t-rapida) ease, color var(--nb-t-rapida) ease;
+}
+
+.nb-carta__modo-btn[aria-pressed='true'] {
+  background: var(--nb-texto-modo);
+  color: var(--nb-fondo-modo);
+}
+
+/* ---------- Fila de tonos ---------- */
+.nb-carta__tonos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--nb-e-3);
+}
+
+@media screen and (min-width: 750px) {
+  .nb-carta__tonos {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+.nb-carta__tono {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  gap: var(--nb-e-2);
+  padding: var(--nb-e-3) var(--nb-e-1);
+  border-radius: var(--nb-radio);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nb-carta__tono:focus-visible {
+  outline: 2px solid var(--nb-rosa);
+  outline-offset: 2px;
+}
+
+.nb-carta__nombre {
+  font-size: 1.3rem;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--nb-texto-suave-modo);
+  transition: color var(--nb-t-rapida) ease;
+}
+
+.nb-carta__tono[aria-pressed='true'] .nb-carta__nombre {
+  color: var(--nb-texto-modo);
+  font-weight: 500;
+}
+
+/* ---------- Uña almendra ---------- */
+.nb-una {
+  display: block;
+  width: 100%;
+  max-width: 5.6rem;
+  transition: transform var(--nb-t-rapida) var(--nb-ease), filter var(--nb-t-lenta) ease;
+}
+
+@media screen and (min-width: 750px) {
+  .nb-una {
+    max-width: 6.4rem;
+  }
+}
+
+.nb-carta__tono[aria-pressed='true'] .nb-una {
+  transform: translateY(-0.6rem);
+}
+
+.nb-una__esmalte {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 9;
+  /* forma almendra: laterales casi rectos y afinado en el último tercio */
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 225' preserveAspectRatio='none'%3E%3Cpath d='M44 2.7C47 0 53 0 56 2.7C80 31.5 97 81 97.5 126V189C97.5 213.8 77 225 50 225S2.5 213.8 2.5 189V126C3 81 20 31.5 44 2.7Z'/%3E%3C/svg%3E")
+    center / 100% 100% no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 225' preserveAspectRatio='none'%3E%3Cpath d='M44 2.7C47 0 53 0 56 2.7C80 31.5 97 81 97.5 126V189C97.5 213.8 77 225 50 225S2.5 213.8 2.5 189V126C3 81 20 31.5 44 2.7Z'/%3E%3C/svg%3E")
+    center / 100% 100% no-repeat;
+  background: linear-gradient(
+    100deg,
+    color-mix(in srgb, var(--nb-c) 78%, black) 0%,
+    var(--nb-c) 30%,
+    color-mix(in srgb, var(--nb-c) 82%, white) 55%,
+    var(--nb-c) 75%,
+    color-mix(in srgb, var(--nb-c) 72%, black) 100%
+  );
+  transition: background var(--nb-t-lenta) ease;
+}
+
+/* veteado aterciopelado del pigmento */
+.nb-una__esmalte::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='240'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.018 0.05' numOctaves='3' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.4 -0.35'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E")
+    center / 140% 140%;
+  mix-blend-mode: soft-light;
+  opacity: 0.7;
+}
+
+/* micro-shimmer: polvo fino plateado / perla en dos capas que destellan alternas */
+.nb-una__esmalte::after,
+.nb-una__polvo {
+  content: '';
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: screen;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.95) 0.5px, transparent 1px),
+    radial-gradient(circle, rgba(226, 232, 244, 0.7) 0.4px, transparent 0.9px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.55) 0.4px, transparent 0.9px),
+    radial-gradient(circle, rgba(236, 240, 250, 0.8) 0.5px, transparent 1px);
+  background-size: 7px 9px, 11px 13px, 5px 7px, 17px 19px;
+  background-position: 0 0, 3px 5px, 2px 1px, 8px 11px;
+  animation: nb-destello 2.6s ease-in-out -1.3s infinite;
+}
+
+.nb-una__polvo {
+  display: block;
+  background-size: 9px 7px, 13px 11px, 6px 8px, 19px 17px;
+  background-position: 4px 2px, 7px 1px, 1px 4px, 3px 9px;
+  animation-delay: 0s;
+}
+
+@keyframes nb-destello {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.nb-carta__tono:hover .nb-una__polvo,
+.nb-carta__tono[aria-pressed='true'] .nb-una__polvo {
+  animation-duration: 1.4s;
+}
+
+/* modo oscuridad: el esmalte brilla */
+.nb-carta[data-modo='oscuridad'] .nb-una__esmalte {
+  background: linear-gradient(
+    100deg,
+    color-mix(in srgb, var(--nb-g) 70%, black) 0%,
+    var(--nb-g) 30%,
+    color-mix(in srgb, var(--nb-g) 75%, white) 55%,
+    var(--nb-g) 75%,
+    color-mix(in srgb, var(--nb-g) 65%, black) 100%
+  );
+}
+
+.nb-carta[data-modo='oscuridad'] .nb-una {
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--nb-g) 80%, transparent))
+    drop-shadow(0 0 22px color-mix(in srgb, var(--nb-g) 45%, transparent));
+}
+
+/* ---------- Detalle del tono ---------- */
+.nb-carta__paneles {
+  display: grid;
+  gap: var(--nb-e-5);
+  border-top: 1px solid var(--nb-borde-modo);
+  padding-top: var(--nb-e-6);
+}
+
+.nb-carta__panel {
+  display: contents;
+}
+
+.nb-carta__panel[hidden] {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .nb-carta__paneles {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    column-gap: var(--nb-e-7);
+    align-items: start;
+  }
+
+  .nb-carta__fotos {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .nb-carta__info,
+  .nb-carta__compra {
+    grid-column: 2;
+  }
+}
+
+.nb-carta__fotos {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  max-width: 100%;
+  border-radius: var(--nb-radio);
+  overflow: hidden;
+  background: var(--nb-superficie-modo);
+  transition: background-color var(--nb-t-lenta) ease;
+}
+
+.nb-carta__foto {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transition: opacity var(--nb-t-lenta) ease;
+}
+
+.nb-carta__foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nb-carta__foto--oscuridad {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nb-carta[data-modo='oscuridad'] .nb-carta__foto--luz {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nb-carta[data-modo='oscuridad'] .nb-carta__foto--oscuridad {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nb-una--grande {
+  max-width: 11rem;
+  width: 32%;
+}
+
+.nb-carta[data-modo='oscuridad'] .nb-una--grande {
+  filter: drop-shadow(0 0 14px color-mix(in srgb, var(--nb-g) 80%, transparent))
+    drop-shadow(0 0 40px color-mix(in srgb, var(--nb-g) 45%, transparent));
+}
+
+.nb-carta__info {
+  display: grid;
+  gap: var(--nb-e-2);
+  align-content: start;
+}
+
+.nb-carta__panel-nombre {
+  margin: 0;
+  color: var(--nb-texto-modo);
+}
+
+.nb-carta__descripcion {
+  margin: 0;
+  color: var(--nb-texto-suave-modo);
+  max-width: 44ch;
+}
+
+.nb-carta__compra {
+  display: grid;
+  gap: var(--nb-e-3);
+  align-content: start;
+  max-width: 44rem;
+}
+
+.nb-carta__compra .price {
+  color: var(--nb-texto-modo);
+}
+
+.nb-carta__nota {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--nb-texto-suave-modo);
+}
+
+.nb-carta__compra .product-form__buttons {
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nb-carta,
+  .nb-carta *,
+  .nb-carta *::before,
+  .nb-carta *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

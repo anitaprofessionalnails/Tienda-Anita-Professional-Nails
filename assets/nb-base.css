@@ -1,0 +1,37 @@
+/*
+ * Anita Professional Nails: ajustes globales sobre Sense.
+ * Solo afinado tipográfico y de detalle; los colores vienen de los esquemas del personalizador.
+ */
+
+/* Cormorant tiene ojo pequeño: más contraste de tamaño y titulares compactos */
+h1, h2, h3, .h0, .h1, .h2, .h3 {
+  letter-spacing: -0.005em;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+body {
+  letter-spacing: 0;
+}
+
+/* Botones: rectos, sin sombra, peso medio */
+.button,
+.shopify-payment-button__button--unbranded {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: background-color var(--nb-t-rapida) ease, color var(--nb-t-rapida) ease;
+}
+
+/* Precio tachado discreto */
+.price--on-sale .price-item--regular {
+  color: rgba(var(--color-foreground), 0.55);
+}
+
+::selection {
+  background: var(--nb-rubor);
+  color: var(--nb-tinta);
+}
+
+:focus-visible {
+  outline-color: var(--nb-rosa-profundo);
+}

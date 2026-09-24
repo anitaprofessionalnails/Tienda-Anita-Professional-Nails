@@ -1,0 +1,364 @@
+{%- comment -%}
+  Carta de color de Anita Professional Nails.
+  Muestra los tonos del kit como uñas almendra con micro-shimmer y un interruptor Luz / Oscuridad.
+  Los tonos no se venden por separado: el botón añade el kit (producto elegido en la sección,
+  o el producto de la página si la sección está en la ficha).
+{%- endcomment -%}
+
+{{ 'nb-carta-color.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'nb-carta-color.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign producto = section.settings.producto
+  if producto == blank and product != blank
+    assign producto = product
+  endif
+  assign modo_inicial = section.settings.modo_inicial
+  assign form_id = 'nb-carta-form-' | append: section.id
+-%}
+
+{%- if producto != blank -%}
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<nb-carta-color
+  class="nb-carta color-{{ section.settings.color_scheme }} gradient"
+  data-modo="{{ modo_inicial }}"
+>
+  <div class="nb-carta__interior page-width section-{{ section.id }}-padding">
+    <div class="nb-carta__cabecera">
+      <div class="nb-carta__intro">
+        {%- if section.settings.titulo != blank -%}
+          <h2 class="nb-carta__titulo {{ section.settings.tamano_titulo }}">{{ section.settings.titulo }}</h2>
+        {%- endif -%}
+        {%- if section.settings.texto != blank -%}
+          <div class="nb-carta__texto rte">{{ section.settings.texto }}</div>
+        {%- endif -%}
+      </div>
+
+      <div class="nb-carta__modo" role="group" aria-label="{{ 'nb.carta.modo_label' | t }}">
+        <button
+          type="button"
+          class="nb-carta__modo-btn"
+          data-modo-btn="luz"
+          aria-pressed="{% if modo_inicial == 'luz' %}true{% else %}false{% endif %}"
+        >
+          {{- 'nb.carta.luz' | t -}}
+        </button>
+        <button
+          type="button"
+          class="nb-carta__modo-btn"
+          data-modo-btn="oscuridad"
+          aria-pressed="{% if modo_inicial == 'oscuridad' %}true{% else %}false{% endif %}"
+        >
+          {{- 'nb.carta.oscuridad' | t -}}
+        </button>
+      </div>
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+      <ul class="nb-carta__tonos" role="list" aria-label="{{ 'nb.carta.tonos_label' | t }}">
+        {%- for block in section.blocks -%}
+          <li class="nb-carta__tono-item">
+            <button
+              type="button"
+              class="nb-carta__tono"
+              data-tono="{{ forloop.index0 }}"
+              aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"
+              aria-controls="NbPanel-{{ section.id }}-{{ forloop.index0 }}"
+              style="--nb-c: {{ block.settings.color }}; --nb-g: {{ block.settings.color_brillo }};"
+              {{ block.shopify_attributes }}
+            >
+              <span class="nb-una" aria-hidden="true"><span class="nb-una__esmalte"><span class="nb-una__polvo"></span></span></span>
+              <span class="nb-carta__nombre">{{ block.settings.nombre | escape }}</span>
+            </button>
+          </li>
+        {%- endfor -%}
+      </ul>
+
+      <div class="nb-carta__paneles">
+        {%- for block in section.blocks -%}
+          <div
+            id="NbPanel-{{ section.id }}-{{ forloop.index0 }}"
+            class="nb-carta__panel"
+            data-panel="{{ forloop.index0 }}"
+            style="--nb-c: {{ block.settings.color }}; --nb-g: {{ block.settings.color_brillo }};"
+            {% unless forloop.first %}
+              hidden
+            {% endunless %}
+          >
+            <div class="nb-carta__fotos">
+              {%- assign alt = block.settings.nombre | escape -%}
+              <div class="nb-carta__foto nb-carta__foto--luz">
+                {%- if block.settings.imagen != blank -%}
+                  {{
+                    block.settings.imagen
+                    | image_url: width: 1200
+                    | image_tag:
+                      loading: 'lazy',
+                      widths: '360, 540, 720, 900, 1200',
+                      sizes: '(min-width: 990px) 560px, (min-width: 750px) 50vw, calc(100vw - 3rem)',
+                      alt: alt
+                  }}
+                {%- else -%}
+                  <span class="nb-una nb-una--grande" aria-hidden="true"><span class="nb-una__esmalte"><span class="nb-una__polvo"></span></span></span>
+                {%- endif -%}
+              </div>
+              <div class="nb-carta__foto nb-carta__foto--oscuridad">
+                {%- if block.settings.imagen_oscuridad != blank -%}
+                  {{
+                    block.settings.imagen_oscuridad
+                    | image_url: width: 1200
+                    | image_tag:
+                      loading: 'lazy',
+                      widths: '360, 540, 720, 900, 1200',
+                      sizes: '(min-width: 990px) 560px, (min-width: 750px) 50vw, calc(100vw - 3rem)',
+                      alt: alt
+                  }}
+                {%- else -%}
+                  <span class="nb-una nb-una--grande" aria-hidden="true"><span class="nb-una__esmalte"><span class="nb-una__polvo"></span></span></span>
+                {%- endif -%}
+              </div>
+            </div>
+
+            <div class="nb-carta__info">
+              <h3 class="nb-carta__panel-nombre h2">{{ block.settings.nombre | escape }}</h3>
+              {%- if block.settings.descripcion != blank -%}
+                <p class="nb-carta__descripcion">{{ block.settings.descripcion | escape }}</p>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+
+        {%- if producto != blank and section.settings.mostrar_compra -%}
+          <div class="nb-carta__compra">
+            {%- render 'price', product: producto, use_variant: true, show_badges: true -%}
+            {%- if section.settings.nota_kit != blank -%}
+              <p class="nb-carta__nota">{{ section.settings.nota_kit | escape }}</p>
+            {%- endif -%}
+            {%- render 'buy-buttons',
+              block: null,
+              product: producto,
+              product_form_id: form_id,
+              section_id: section.id,
+              show_pickup_availability: false
+            -%}
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</nb-carta-color>
+
+{% schema %}
+{
+  "name": "Carta de color",
+  "tag": "section",
+  "class": "section nb-carta-seccion",
+  "settings": [
+    {
+      "type": "text",
+      "id": "titulo",
+      "label": "Título",
+      "default": "Seis tonos que brillan en la oscuridad"
+    },
+    {
+      "type": "select",
+      "id": "tamano_titulo",
+      "label": "Tamaño del título",
+      "options": [
+        { "value": "h2", "label": "Pequeño" },
+        { "value": "h1", "label": "Mediano" },
+        { "value": "h0", "label": "Grande" }
+      ],
+      "default": "h1"
+    },
+    {
+      "type": "richtext",
+      "id": "texto",
+      "label": "Texto",
+      "default": "<p>Toca un tono para verlo de cerca. Apaga la luz para ver cómo brilla.</p>"
+    },
+    {
+      "type": "select",
+      "id": "modo_inicial",
+      "label": "Modo al cargar la página",
+      "options": [
+        { "value": "luz", "label": "Luz" },
+        { "value": "oscuridad", "label": "Oscuridad" }
+      ],
+      "default": "luz"
+    },
+    {
+      "type": "header",
+      "content": "Compra"
+    },
+    {
+      "type": "product",
+      "id": "producto",
+      "label": "Producto (el kit)",
+      "info": "En la ficha de producto se usa el producto de la página si lo dejas vacío."
+    },
+    {
+      "type": "checkbox",
+      "id": "mostrar_compra",
+      "label": "Mostrar precio y botón de compra",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "nota_kit",
+      "label": "Nota bajo el precio",
+      "default": "Los seis tonos vienen juntos en el kit."
+    },
+    {
+      "type": "header",
+      "content": "Diseño"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Esquema de color (modo Luz)",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Espacio superior",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Espacio inferior",
+      "default": 56
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tono",
+      "name": "Tono",
+      "limit": 12,
+      "settings": [
+        {
+          "type": "text",
+          "id": "nombre",
+          "label": "Nombre",
+          "default": "Nombre del tono"
+        },
+        {
+          "type": "text",
+          "id": "descripcion",
+          "label": "Descripción corta"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color con luz",
+          "default": "#C61F6B"
+        },
+        {
+          "type": "color",
+          "id": "color_brillo",
+          "label": "Color del brillo en oscuridad",
+          "default": "#FF2E9A"
+        },
+        {
+          "type": "image_picker",
+          "id": "imagen",
+          "label": "Foto con luz",
+          "info": "Uña aplicada o pincel. Si no hay foto, se muestra la uña dibujada."
+        },
+        {
+          "type": "image_picker",
+          "id": "imagen_oscuridad",
+          "label": "Foto en oscuridad"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Carta de color",
+      "blocks": [
+        {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa Roseta",
+            "descripcion": "Fucsia frambuesa con micro-shimmer plateado.",
+            "color": "#C61F6B",
+            "color_brillo": "#FF2E9A"
+          }
+        },
+        {
+          "type": "tono",
+          "settings": {
+            "nombre": "Capella",
+            "descripcion": "Verde lima con micro-shimmer dorado.",
+            "color": "#98B41D",
+            "color_brillo": "#D4FF3A"
+          }
+        },
+        {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa Esmeralda",
+            "descripcion": "Verde esmeralda con micro-shimmer plateado.",
+            "color": "#1D7B42",
+            "color_brillo": "#2BFF6A"
+          }
+        },
+        {
+          "type": "tono",
+          "settings": {
+            "nombre": "Andrómeda",
+            "descripcion": "Azul petróleo con micro-shimmer plateado.",
+            "color": "#15698A",
+            "color_brillo": "#2EC8FF"
+          }
+        },
+        {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa de Orión",
+            "descripcion": "Magenta orquídea con micro-shimmer plateado.",
+            "color": "#D0419E",
+            "color_brillo": "#FF3FD0"
+          }
+        },
+        {
+          "type": "tono",
+          "settings": {
+            "nombre": "Supernova",
+            "descripcion": "Coral intenso con micro-shimmer dorado.",
+            "color": "#D7442E",
+            "color_brillo": "#FF3B2A"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

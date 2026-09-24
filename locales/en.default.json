@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "nb": {
+    "carta": {
+      "modo_label": "View the shades in light or in the dark",
+      "luz": "Light",
+      "oscuridad": "Dark",
+      "tonos_label": "Shades in the kit"
+    }
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Enter store using password:",

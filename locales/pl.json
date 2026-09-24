@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "nb": {
+    "carta": {
+      "modo_label": "View the shades in light or in the dark",
+      "luz": "Light",
+      "oscuridad": "Dark",
+      "tonos_label": "Shades in the kit"
+    }
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Wejdź do sklepu, wpisując hasło:",
@@ -234,6 +242,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Nie znaleziono strony",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "Nie znaleziono wyników dla “{{ terms }}”. Sprawdź pisownię lub użyj innego słowa lub zwrotu.",
       "page": "Strona",
@@ -287,10 +299,6 @@
         "error_heading": "Dostosuj następujące dane:",
         "title": "Formularz kontaktowy"
       }
-    },
-    "404": {
-      "title": "Nie znaleziono strony",
-      "subtext": "404"
     }
   },
   "sections": {

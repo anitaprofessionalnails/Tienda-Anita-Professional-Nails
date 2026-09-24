@@ -8,6 +8,14 @@
  * ------------------------------------------------------------
  */
 {
+  "nb": {
+    "carta": {
+      "modo_label": "View the shades in light or in the dark",
+      "luz": "Light",
+      "oscuridad": "Dark",
+      "tonos_label": "Shades in the kit"
+    }
+  },
   "general": {
     "password_page": {
       "login_form_heading": "Вход в магазин с помощью пароля:",
@@ -234,6 +242,10 @@
     }
   },
   "templates": {
+    "404": {
+      "title": "Страница не найдена",
+      "subtext": "404"
+    },
     "search": {
       "no_results": "По запросу «{{ terms }}» ничего не найдено. Проверьте правописание или выберите другие слова либо фразу.",
       "title": "Результаты поиска",
@@ -287,10 +299,6 @@
         "error_heading": "Измените следующие элементы:",
         "title": "Форма для связи"
       }
-    },
-    "404": {
-      "title": "Страница не найдена",
-      "subtext": "404"
     }
   },
   "sections": {
