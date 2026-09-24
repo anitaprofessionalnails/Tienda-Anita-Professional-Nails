@@ -38,7 +38,8 @@ Documentos de referencia (léelos antes de tocar código):
   - Rubor `#FDF1F4`: fondos suaves, con moderación.
   - Noche `#0E0B0D`: solo para el modo Oscuridad de la carta de color.
 - Tipografía (validada): **Cormorant** (display) + **Inter** (texto), desde el `font_picker` de Shopify. Escala modular [pendiente].
-- Forma de las uñas en muestrarios: **almendra**.
+- Forma de las uñas en muestrarios: **almendra** real de manicura: larga y estilizada, laterales casi rectos desde la cutícula y afinado progresivo en el último tercio hasta una punta suave redondeada. Nada de óvalos ni formas de huevo.
+- Acabado del esmalte al representarlo: **micro-shimmer muy fino** (polvo diminuto plateado / blanco perlado, uniforme, que destella al moverse) + ligero veteado aterciopelado dentro del color. Nunca glitter grueso ni escamas: "polvo de estrellas", no "fiesta".
 - Radio, sombras y espaciados: tokens en `assets/nb-tokens.css`.
 - Una sola "pieza memorable": la **carta de color** con interruptor **Luz / Oscuridad** (home y ficha). En Oscuridad el fondo pasa a Noche y cada tono muestra su foto brillando. Es el único momento oscuro de la web; el resto, silencioso y disciplinado.
 - Tonos del kit: Nebulosa Roseta `#C61F6B`, Nebulosa Esmeralda `[pendiente de confirmar]`, Capella `#98B41D`, Andrómeda `#15698A`, Orión `#D0419E`, Supernova `#D7442E`.
