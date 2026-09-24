@@ -42,11 +42,12 @@ Documentos de referencia (léelos antes de tocar código):
 - Acabado del esmalte al representarlo: **micro-shimmer muy fino** (polvo diminuto plateado / blanco perlado, uniforme, que destella al moverse) + ligero veteado aterciopelado dentro del color. Nunca glitter grueso ni escamas: "polvo de estrellas", no "fiesta".
 - Radio, sombras y espaciados: tokens en `assets/nb-tokens.css`.
 - Una sola "pieza memorable": la **carta de color** con interruptor **Luz / Oscuridad** (home y ficha). En Oscuridad el fondo pasa a Noche y cada tono muestra su foto brillando. Es el único momento oscuro de la web; el resto, silencioso y disciplinado.
-- Tonos del kit: Nebulosa Roseta `#C61F6B`, Nebulosa Esmeralda `[pendiente de confirmar]`, Capella `#98B41D`, Andrómeda `#15698A`, Orión `#D0419E`, Supernova `#D7442E`.
+- Tonos del kit (nombres exactos de la etiqueta): Nebulosa Roseta `#C61F6B`, Capella `#98B41D`, Nebulosa Esmeralda `#1D7B42`, Andrómeda `#15698A`, Nebulosa de Orión `#D0419E`, Supernova `#D7442E`.
+- Fotos de marca en `docs/fotos/` (fuera de git; se suben a Shopify, no a `assets/`): bote por tono, pincel macro por tono, bote brillando en oscuridad por tono, caja abierta/cerrada y grupo de 6.
 - Maqueta de referencia validada: https://claude.ai/artifact/34PpY8NivUVGFGwPRrMpyZ
 
 ## Voz de marca
-Cercana, amigable y profesional dentro del nicho: hablamos de tú a una colega del oficio. Usamos el vocabulario técnico con naturalidad ("ojo de gato luminiscente"). Lema: "Tu arte inspira al nuestro". Evitamos el tono cursi de "tienda de belleza" genérica. Palabras prohibidas: [pendiente].
+Cercana, amigable y profesional dentro del nicho: hablamos de tú a una colega del oficio. Usamos el vocabulario técnico con naturalidad ("ojo de gato luminiscente"). Lema, tal como va impreso en la caja: "Tu arte inspira el nuestro". Evitamos el tono cursi de "tienda de belleza" genérica. Palabras prohibidas: [pendiente].
 
 ## Skills y herramientas
 - Para cualquier decisión visual, primero se propone el plan de tokens (color, tipografía, espaciado) y se valida conmigo antes de maquetar secciones.

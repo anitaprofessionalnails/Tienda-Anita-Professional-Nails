@@ -1,4 +1,4 @@
-# PRD — Tienda Shopify de Anita Professional Nails
+﻿# PRD — Tienda Shopify de Anita Professional Nails
 
 ## 1. Objetivo
 Lanzar una tienda que posicione a Anita Professional Nails como marca premium de manicura, con acabado de salón y estética editorial, y que convierta tráfico frío de redes sociales en móvil.
@@ -17,7 +17,7 @@ KPIs de lanzamiento (primeros 90 días):
 - **Voz:** cercana, profesional dentro del nicho, amigable.
 
 ## 3. Filosofía de diseño
-- **Concepto:** no hay uno formal, pero la caja de envío lleva el lema **"Tu arte inspira al nuestro"**.
+- **Concepto:** no hay uno formal, pero la caja de envío lleva el lema **"Tu arte inspira el nuestro"**.
 - **La pieza memorable:** el **selector de tonos**. En la home y en la ficha, los colores se muestran grandes y táctiles, como una carta de color física. Ese es el momento de marca; el resto de la web es sobrio.
 - **Referencias** (guardar capturas desktop + móvil y el HTML en `docs/design-reference/`):
   - https://jimenanails.com/
@@ -110,4 +110,4 @@ Logo en SVG, paleta y tipografías (si existen), fotos de producto por tono (bot
 5. **Paleta:** Rosa Anita `#f48ba0` + blanco, priorizando siempre la elegancia. El Rosa profundo `#C2476A` solo en detalles sobre fondo blanco, nunca predominante. Detalle de tokens en CLAUDE.md.
 6. **Tipografía:** opción B, Cormorant + Inter.
 7. **Carta de color:** con interruptor Luz / Oscuridad. Uñas en forma **almendra**.
-8. **Tonos:** Nebulosa Roseta `#C61F6B`, Nebulosa Esmeralda (código pendiente), Capella `#98B41D`, Andrómeda `#15698A`, Orión `#D0419E`, Supernova `#D7442E`.
+8. **Tonos:** Nebulosa Roseta `#C61F6B`, Nebulosa Esmeralda `#1D7B42`, Capella `#98B41D`, Andrómeda `#15698A`, Nebulosa de Orión `#D0419E`, Supernova `#D7442E`.

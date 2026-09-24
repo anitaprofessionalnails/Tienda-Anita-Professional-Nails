@@ -5,6 +5,9 @@ Marca española de esmaltes de uñas fundada por Miguel y Anita.
 
 ## Producto
 Pack de 6 esmaltes **ojo de gato luminiscente**. Es el único producto de la tienda.
+- Tipo: **esmalte semipermanente UV/LED** (necesita lámpara). Bote de 15 ml. **Edición limitada**.
+- Tonos: Nebulosa Roseta, Capella, Nebulosa Esmeralda, Andrómeda, Nebulosa de Orión, Supernova.
+- Presentación: caja rígida de mármol rosa con cierre magnético, monograma de la marca y el mensaje interior "Tu arte inspira el nuestro. Gracias por llevar contigo un trocito de la ilusión con la que creamos cada producto."
 - Precio de lanzamiento: 79,98 €. Después: 99,98 €. IVA incluido. Envío gratis.
 - Diferencial: la luminiscencia y una calidad de esmalte superior a la del mercado.
 - Se aplica de forma distinta al resto de esmaltes (hay que explicarlo bien).
@@ -18,7 +21,7 @@ Mujeres de 24 a 54 años, en España. Dos perfiles:
 "Precio de lanzamiento" 79,98 € (después 99,98 €). Envío en 24/48 h desde el primer día.
 
 ## Lema
-**"Tu arte inspira al nuestro"** (impreso en la caja de envío).
+**"Tu arte inspira el nuestro"** (impreso en la caja de envío).
 
 ## Voz
 - Cercana y amigable, pero con criterio profesional: hablamos de tú a una colega del oficio.
