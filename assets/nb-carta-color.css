@@ -183,20 +183,14 @@
   position: absolute;
   inset: 0;
   mix-blend-mode: screen;
-  background-image:
-    radial-gradient(circle, rgba(255, 255, 255, 0.95) 0.5px, transparent 1px),
-    radial-gradient(circle, rgba(226, 232, 244, 0.7) 0.4px, transparent 0.9px),
-    radial-gradient(circle, rgba(255, 255, 255, 0.55) 0.4px, transparent 0.9px),
-    radial-gradient(circle, rgba(236, 240, 250, 0.8) 0.5px, transparent 1px);
-  background-size: 7px 9px, 11px 13px, 5px 7px, 17px 19px;
-  background-position: 0 0, 3px 5px, 2px 1px, 8px 11px;
+  /* textura de puntos repartidos al azar (no en rejilla) */
+  background: url('nb-shimmer-a.png') 0 0 / 64px 64px repeat;
   animation: nb-destello 2.6s ease-in-out -1.3s infinite;
 }
 
 .nb-una__polvo {
   display: block;
-  background-size: 9px 7px, 13px 11px, 6px 8px, 19px 17px;
-  background-position: 4px 2px, 7px 1px, 1px 4px, 3px 9px;
+  background: url('nb-shimmer-b.png') 23px 37px / 64px 64px repeat;
   animation-delay: 0s;
 }
 

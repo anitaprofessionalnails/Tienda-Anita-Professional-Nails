@@ -66,6 +66,25 @@ body {
   content: '–';
 }
 
+/* Portada (image-banner "portada"): en móvil el texto también va en caja blanca sobre la foto */
+@media screen and (max-width: 749px) {
+  [id$='__portada'] .banner.banner .banner__content {
+    align-items: flex-end;
+    padding: 1.6rem;
+  }
+  [id$='__portada'] .banner.banner.banner.banner .banner__box {
+    background: rgba(255, 255, 255, 0.94);
+    padding: 1.6rem 2rem 2rem;
+    width: 100%;
+  }
+  [id$='__portada'] .banner__heading {
+    font-size: 3rem;
+  }
+  [id$='__portada'] .banner__text {
+    font-size: 1.3rem;
+  }
+}
+
 /* Precio tachado discreto */
 .price--on-sale .price-item--regular {
   color: rgba(var(--color-foreground), 0.55);
