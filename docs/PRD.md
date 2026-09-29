@@ -13,7 +13,7 @@ KPIs de lanzamiento (primeros 90 días):
 - **Hero product:** el pack es el único producto.
 - **Diferencial real:** la luminiscencia y una calidad de esmalte superior a lo que hay en el mercado.
 - **Cliente ideal:** mujeres de 24 a 54 años, solo en España por ahora. **Importante:** el producto está orientado a profesionales de uñas con salón propio.
-- **Precio:** 79,98 € en preventa, después 99,98 €. Envío gratis. IVA incluido en ambos precios.
+- **Precio:** 79,98 € en preventa, después 99,98 €. Envío gratis **solo para quien se suscribe a la newsletter** (pop-up de Klaviyo). IVA incluido en ambos precios.
 - **Voz:** cercana, profesional dentro del nicho, amigable.
 
 ## 3. Filosofía de diseño
@@ -50,7 +50,7 @@ KPIs de lanzamiento (primeros 90 días):
 - 404 y búsqueda con sugerencias.
 
 ## 5. Home (orden de secciones)
-1. **Barra de anuncio:** envío gratis / preventa activa.
+1. **Barra de anuncio:** envío en 24/48 h / precio de lanzamiento.
 2. **Header:** logo, menú, búsqueda, cuenta y carrito. Sticky y compacto en móvil.
 3. **Hero:** imagen o vídeo de manos + producto. Un titular corto y un CTA "Ver colores".
 4. **Carta de color interactiva:** fila de tonos grandes; al tocar uno se muestran la foto de la mano aplicada, el nombre y el botón de añadir.
@@ -77,7 +77,7 @@ KPIs de lanzamiento (primeros 90 días):
 Hero del kit, bloque "qué incluye" con miniaturas de cada producto, precio del kit frente a la suma por separado (ahorro visible), tutorial en vídeo y FAQs del kit.
 
 ## 8. Carrito
-Cajón lateral con barra de progreso hacia el envío gratis, upsell de 1 producto (top coat / quitaesmalte), nota de regalo opcional y botón de checkout destacado. Checkout estándar de Shopify con la marca aplicada (logo, colores y tipografía desde el editor de checkout).
+Cajón lateral (sin barra de envío gratis: el envío gratis es solo para suscriptoras de la newsletter), upsell de 1 producto (top coat / quitaesmalte), nota de regalo opcional y botón de checkout destacado. Checkout estándar de Shopify con la marca aplicada (logo, colores y tipografía desde el editor de checkout).
 
 ## 9. FAQ, contacto, sobre nosotros
 - FAQ con acordeones agrupados: Producto y aplicación · Duración · Cómo se aplica el ojo de gato luminiscente (se aplica distinto al resto de esmaltes) · Envíos · Devoluciones · Pago.
@@ -112,4 +112,4 @@ Logo en SVG, paleta y tipografías (si existen), fotos de producto por tono (bot
 7. **Carta de color:** con interruptor Luz / Oscuridad. Uñas en forma **almendra**.
 8. **Tonos:** Nebulosa Roseta `#C61F6B`, Nebulosa Esmeralda `#1D7B42`, Capella `#98B41D`, Andrómeda `#15698A`, Nebulosa de Orión `#D0419E`, Supernova `#D7442E`.
 9. **Comparador de diseño (29/09/2026):** ver elecciones en CLAUDE.md. Los corazones de línea en la barra de anuncios los ha elegido Miguel expresamente (sustituye a "evitar corazones" en ese elemento).
-10. **Sin caja de código de descuento en la ficha.** El incentivo será envío gratis al suscribirse a la newsletter, con un pop-up de Klaviyo (pendiente). **Contradicción abierta:** el PRD dice envío gratis para todos; hay que confirmar si el envío es gratis siempre o solo para suscriptoras. Mientras tanto, los textos dicen "Envío en 24/48 h" sin "gratis".
+10. **Sin caja de código de descuento en la ficha.** El incentivo será envío gratis al suscribirse a la newsletter, con un pop-up de Klaviyo (pendiente). **Confirmado (29/09/2026):** el envío gratis es solo para suscriptoras de la newsletter. En la web nunca se promete "envío gratis" en general; los textos dicen "Envío en 24/48 h".

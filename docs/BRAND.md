@@ -1,4 +1,4 @@
-﻿# BRAND — Anita Professional Nails
+# BRAND — Anita Professional Nails
 
 ## Quiénes somos
 Marca española de esmaltes de uñas fundada por Miguel y Anita.
@@ -8,7 +8,7 @@ Pack de 6 esmaltes **ojo de gato luminiscente**. Es el único producto de la tie
 - Tipo: **esmalte semipermanente UV/LED** (necesita lámpara). Bote de 15 ml. **Edición limitada**.
 - Tonos: Nebulosa Roseta, Capella, Nebulosa Esmeralda, Andrómeda, Nebulosa de Orión, Supernova.
 - Presentación: caja rígida de mármol rosa con cierre magnético, monograma de la marca y el mensaje interior "Tu arte inspira el nuestro. Gracias por llevar contigo un trocito de la ilusión con la que creamos cada producto."
-- Precio de lanzamiento: 79,98 €. Después: 99,98 €. IVA incluido. Envío gratis.
+- Precio de lanzamiento: 79,98 €. Después: 99,98 €. IVA incluido. Envío gratis solo al suscribirse a la newsletter.
 - Diferencial: la luminiscencia y una calidad de esmalte superior a la del mercado.
 - Se aplica de forma distinta al resto de esmaltes (hay que explicarlo bien).
 
