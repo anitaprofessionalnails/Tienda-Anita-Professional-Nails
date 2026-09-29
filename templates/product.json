@@ -119,7 +119,8 @@
             "nombre": "Nebulosa Roseta",
             "descripcion": "Fucsia frambuesa con micro-shimmer plateado.",
             "color": "#C61F6B",
-            "color_brillo": "#FF2E9A"
+            "color_brillo": "#FF2E9A",
+            "imagen": "shopify://shop_images/04-pincel-nebulosa-roseta.png"
           }
         },
         "tono_capella": {
@@ -128,7 +129,8 @@
             "nombre": "Capella",
             "descripcion": "Verde lima con micro-shimmer dorado.",
             "color": "#98B41D",
-            "color_brillo": "#D4FF3A"
+            "color_brillo": "#D4FF3A",
+            "imagen": "shopify://shop_images/05-pincel-capella.png"
           }
         },
         "tono_esmeralda": {
@@ -137,7 +139,8 @@
             "nombre": "Nebulosa Esmeralda",
             "descripcion": "Verde esmeralda con micro-shimmer plateado.",
             "color": "#1D7B42",
-            "color_brillo": "#2BFF6A"
+            "color_brillo": "#2BFF6A",
+            "imagen": "shopify://shop_images/06-pincel-nebulosa-esmeralda.png"
           }
         },
         "tono_andromeda": {
@@ -146,7 +149,8 @@
             "nombre": "Andrómeda",
             "descripcion": "Azul petróleo con micro-shimmer plateado.",
             "color": "#15698A",
-            "color_brillo": "#2EC8FF"
+            "color_brillo": "#2EC8FF",
+            "imagen": "shopify://shop_images/07-pincel-andromeda.png"
           }
         },
         "tono_orion": {
@@ -155,7 +159,8 @@
             "nombre": "Nebulosa de Orión",
             "descripcion": "Magenta orquídea con micro-shimmer plateado.",
             "color": "#D0419E",
-            "color_brillo": "#FF3FD0"
+            "color_brillo": "#FF3FD0",
+            "imagen": "shopify://shop_images/08-pincel-nebulosa-de-orion.png"
           }
         },
         "tono_supernova": {
@@ -164,7 +169,8 @@
             "nombre": "Supernova",
             "descripcion": "Coral intenso con micro-shimmer dorado.",
             "color": "#D7442E",
-            "color_brillo": "#FF3B2A"
+            "color_brillo": "#FF3B2A",
+            "imagen": "shopify://shop_images/09-pincel-supernova.png"
           }
         }
       },
