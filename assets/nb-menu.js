@@ -17,6 +17,14 @@
         true
       );
 
+      // Un enlace a un tono de la misma página (#tono-...) cierra el menú para que se vea la carta
+      nav.addEventListener('click', (evento) => {
+        const enlace = evento.target.closest('a[href*="#"]');
+        if (!enlace || enlace.pathname !== window.location.pathname) return;
+        const cajon = nav.closest('header-drawer, menu-drawer');
+        if (cajon && typeof cajon.closeMenuDrawer === 'function') cajon.closeMenuDrawer(evento);
+      });
+
       nav.querySelectorAll('details').forEach((detalle) => {
         const resumen = detalle.querySelector(':scope > summary');
         if (resumen) resumen.setAttribute('aria-expanded', String(detalle.open));

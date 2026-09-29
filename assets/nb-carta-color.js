@@ -22,10 +22,26 @@ if (!customElements.get('nb-carta-color')) {
           if (boton) this.seleccionar(Number(boton.dataset.tono));
         };
         document.addEventListener('shopify:block:select', this.alSeleccionarBloque);
+
+        // Enlaces del menú del tipo /products/...#tono-capella abren la carta en ese tono
+        this.alCambiarHash = () => this.abrirDesdeHash();
+        window.addEventListener('hashchange', this.alCambiarHash);
+        this.abrirDesdeHash();
       }
 
       disconnectedCallback() {
         document.removeEventListener('shopify:block:select', this.alSeleccionarBloque);
+        window.removeEventListener('hashchange', this.alCambiarHash);
+      }
+
+      abrirDesdeHash() {
+        const slug = decodeURIComponent(window.location.hash.slice(1));
+        if (!slug.startsWith('tono-')) return;
+        const boton = this.tonos.find((b) => b.dataset.tonoSlug === slug);
+        if (!boton) return;
+        this.seleccionar(Number(boton.dataset.tono));
+        const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        this.scrollIntoView({ behavior: suave ? 'smooth' : 'auto', block: 'start' });
       }
 
       seleccionar(indice) {

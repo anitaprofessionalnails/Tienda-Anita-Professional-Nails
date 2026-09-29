@@ -78,6 +78,7 @@
               type="button"
               class="nb-carta__tono"
               data-tono="{{ forloop.index0 }}"
+              data-tono-slug="tono-{{ block.settings.nombre | handleize }}"
               aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"
               aria-controls="NbPanel-{{ section.id }}-{{ forloop.index0 }}"
               style="--nb-c: {{ block.settings.color }}; --nb-g: {{ block.settings.color_brillo }};"
