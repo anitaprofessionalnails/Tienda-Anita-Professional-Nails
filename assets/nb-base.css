@@ -22,6 +22,50 @@ body {
   transition: background-color var(--nb-t-rapida) ease, color var(--nb-t-rapida) ease;
 }
 
+/* Pago rápido sin marca: negro, bajo el botón "Añadir" (que va con contorno) */
+.shopify-payment-button__button--unbranded {
+  background-color: var(--nb-tinta);
+  color: var(--nb-blanco);
+}
+.shopify-payment-button__button--unbranded:hover:not([disabled]) {
+  background-color: #000;
+}
+
+/* Ficha: precio más grande */
+.product .price--large .price-item {
+  font-size: 2.6rem;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 750px) {
+  .product .price--large .price-item {
+    font-size: 3rem;
+  }
+}
+
+/* Ficha: selector de cantidad en forma de pastilla */
+.product-form__quantity .quantity {
+  --inputs-radius: 999px;
+  --inputs-radius-outset: 1000px;
+}
+
+/* Desplegables con + y – en lugar de flecha */
+.accordion summary .icon-caret {
+  display: none;
+}
+.accordion summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1;
+}
+.accordion details[open] > summary::after {
+  content: '–';
+}
+
 /* Precio tachado discreto */
 .price--on-sale .price-item--regular {
   color: rgba(var(--color-foreground), 0.55);

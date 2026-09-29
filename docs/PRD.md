@@ -1,4 +1,4 @@
-﻿# PRD — Tienda Shopify de Anita Professional Nails
+# PRD — Tienda Shopify de Anita Professional Nails
 
 ## 1. Objetivo
 Lanzar una tienda que posicione a Anita Professional Nails como marca premium de manicura, con acabado de salón y estética editorial, y que convierta tráfico frío de redes sociales en móvil.
@@ -111,3 +111,5 @@ Logo en SVG, paleta y tipografías (si existen), fotos de producto por tono (bot
 6. **Tipografía:** opción B, Cormorant + Inter.
 7. **Carta de color:** con interruptor Luz / Oscuridad. Uñas en forma **almendra**.
 8. **Tonos:** Nebulosa Roseta `#C61F6B`, Nebulosa Esmeralda `#1D7B42`, Capella `#98B41D`, Andrómeda `#15698A`, Nebulosa de Orión `#D0419E`, Supernova `#D7442E`.
+9. **Comparador de diseño (29/09/2026):** ver elecciones en CLAUDE.md. Los corazones de línea en la barra de anuncios los ha elegido Miguel expresamente (sustituye a "evitar corazones" en ese elemento).
+10. **Sin caja de código de descuento en la ficha.** El incentivo será envío gratis al suscribirse a la newsletter, con un pop-up de Klaviyo (pendiente). **Contradicción abierta:** el PRD dice envío gratis para todos; hay que confirmar si el envío es gratis siempre o solo para suscriptoras. Mientras tanto, los textos dicen "Envío en 24/48 h" sin "gratis".

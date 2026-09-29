@@ -23,7 +23,8 @@
     <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
-          <nav class="menu-drawer__navigation">
+          {%- comment -%} nb: submenús en acordeón (+/–) en el mismo panel; ver nb-menu.css / nb-menu.js {%- endcomment -%}
+          <nav class="menu-drawer__navigation nb-menu-acordeon">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in section.settings.menu.links -%}
                 <li>
@@ -57,14 +58,32 @@
                             {%- for childlink in link.links -%}
                               <li>
                                 {%- if childlink.links == blank -%}
+                                  {%- liquid
+                                    # nb: miniatura de 40px (colección o producto; si no, archivo "menu-<enlace>.jpg" subido a Archivos)
+                                    assign thumb = blank
+                                    if childlink.type == 'collection_link' or childlink.type == 'product_link'
+                                      assign thumb = childlink.object.featured_image
+                                    endif
+                                    if thumb == blank
+                                      assign nombre_archivo = 'menu-' | append: childlink.handle | append: '.jpg'
+                                      assign thumb = images[nombre_archivo]
+                                    endif
+                                  -%}
                                   <a
                                     id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
                                     href="{{ childlink.url }}"
-                                    class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"
+                                    class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if thumb != blank %} nb-menu-item--thumb{% endif %}{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"
                                     {% if childlink.current %}
                                       aria-current="page"
                                     {% endif %}
                                   >
+                                    {%- if thumb != blank -%}
+                                      {{
+                                        thumb
+                                        | image_url: width: 96, height: 96, crop: 'center'
+                                        | image_tag: width: 40, height: 40, loading: 'lazy', class: 'nb-menu-thumb', alt: ''
+                                      }}
+                                    {%- endif -%}
                                     {{ childlink.title | escape }}
                                   </a>
                                 {%- else -%}
@@ -139,6 +158,32 @@
               {%- endfor -%}
             </ul>
           </nav>
+          {%- comment -%} nb: enlaces secundarios (menú con identificador "menu-secundario") e inicio de sesión {%- endcomment -%}
+          <div class="nb-menu-extra">
+            {%- assign menu_secundario = linklists['menu-secundario'] -%}
+            {%- if menu_secundario.links.size > 0 -%}
+              <ul class="nb-menu-secundario list-unstyled" role="list">
+                {%- for enlace in menu_secundario.links -%}
+                  <li>
+                    <a href="{{ enlace.url }}" class="link link--text">{{ enlace.title | escape }}</a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+            {%- if shop.customer_accounts_enabled -%}
+              <a
+                href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+                class="nb-menu-cuenta link link--text"
+              >
+                {{- 'icon-account.svg' | inline_asset_content -}}
+                {%- if customer -%}
+                  {{ 'customer.account.title' | t }}
+                {%- else -%}
+                  {{ 'customer.log_in' | t }}
+                {%- endif -%}
+              </a>
+            {%- endif -%}
+          </div>
           <div class="menu-drawer__utility-links">
             {%- if show_country_selector or show_language_selector -%}
               <div class="menu-drawer__localization header-localization">

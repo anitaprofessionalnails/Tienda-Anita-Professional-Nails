@@ -1,0 +1,124 @@
+{%- comment -%}
+  Barra de anuncios en movimiento continuo (marquee) con separador de corazón, destello o punto.
+  Con "reducir movimiento" activado en el dispositivo, los mensajes se muestran quietos.
+{%- endcomment -%}
+
+{{ 'nb-anuncio.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign duracion = section.blocks.size | times: section.settings.segundos_por_mensaje
+  if duracion < 8
+    assign duracion = 8
+  endif
+-%}
+
+{%- capture separador -%}
+  {%- case section.settings.separador -%}
+    {%- when 'corazon' -%}
+      <svg class="nb-anuncio__sep" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10Z"/></svg>
+    {%- when 'destello' -%}
+      <svg class="nb-anuncio__sep" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2c.6 4.8 2.2 6.9 7 7.5v1c-4.8.6-6.4 2.7-7 7.5h-1c-.6-4.8-2.2-6.9-7-7.5v-1c4.8-.6 6.4-2.7 7-7.5h1Z"/></svg>
+    {%- else -%}
+      <span class="nb-anuncio__sep nb-anuncio__sep--punto" aria-hidden="true">·</span>
+  {%- endcase -%}
+{%- endcapture -%}
+
+{%- capture mensajes -%}
+  {%- for block in section.blocks -%}
+    <span class="nb-anuncio__item" {{ block.shopify_attributes }}>
+      {%- if block.settings.enlace != blank -%}
+        <a href="{{ block.settings.enlace }}" class="nb-anuncio__enlace">{{ block.settings.texto | escape }}</a>
+      {%- else -%}
+        {{ block.settings.texto | escape }}
+      {%- endif -%}
+      {{ separador }}
+    </span>
+  {%- endfor -%}
+{%- endcapture -%}
+
+{%- if section.blocks.size > 0 -%}
+  <div
+    class="nb-anuncio color-{{ section.settings.color_scheme }} gradient"
+    role="region"
+    aria-label="{{ 'sections.header.announcement' | t }}"
+    style="--nb-anuncio-duracion: {{ duracion }}s;"
+  >
+    <div class="nb-anuncio__pista">
+      <div class="nb-anuncio__grupo">{{ mensajes }}</div>
+      <div class="nb-anuncio__grupo" aria-hidden="true" inert>{{ mensajes }}</div>
+      <div class="nb-anuncio__grupo" aria-hidden="true" inert>{{ mensajes }}</div>
+      <div class="nb-anuncio__grupo" aria-hidden="true" inert>{{ mensajes }}</div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Anuncios en movimiento",
+  "tag": "div",
+  "class": "nb-anuncio-seccion",
+  "max_blocks": 8,
+  "settings": [
+    {
+      "type": "select",
+      "id": "separador",
+      "label": "Separador entre mensajes",
+      "options": [
+        { "value": "corazon", "label": "Corazón de línea" },
+        { "value": "destello", "label": "Destello" },
+        { "value": "punto", "label": "Punto" }
+      ],
+      "default": "corazon"
+    },
+    {
+      "type": "range",
+      "id": "segundos_por_mensaje",
+      "label": "Velocidad (segundos por mensaje)",
+      "min": 3,
+      "max": 12,
+      "step": 1,
+      "unit": "s",
+      "default": 6
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Esquema de color",
+      "default": "scheme-4"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "mensaje",
+      "name": "Mensaje",
+      "settings": [
+        {
+          "type": "text",
+          "id": "texto",
+          "label": "Texto",
+          "default": "Envío en 24/48 h"
+        },
+        {
+          "type": "url",
+          "id": "enlace",
+          "label": "Enlace (opcional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Anuncios en movimiento",
+      "blocks": [
+        { "type": "mensaje", "settings": { "texto": "Envío en 24/48 h" } },
+        { "type": "mensaje", "settings": { "texto": "Precio de lanzamiento 79,98 €" } },
+        { "type": "mensaje", "settings": { "texto": "Devoluciones en 14 días" } },
+        { "type": "mensaje", "settings": { "texto": "Edición limitada" } }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "groups": ["header"]
+  }
+}
+{% endschema %}

@@ -1,0 +1,118 @@
+/* Menú lateral: submenús en acordeón (+/–) dentro del mismo panel, con miniaturas */
+
+/* El submenú deja de ser un panel que se desliza y se abre debajo de su enlace */
+.js .nb-menu-acordeon .menu-drawer__submenu {
+  position: static;
+  transform: none;
+  visibility: visible;
+  background: transparent;
+  z-index: auto;
+}
+
+.js .nb-menu-acordeon details:not([open]) > .menu-drawer__submenu {
+  display: none;
+}
+
+.js .nb-menu-acordeon .submenu-open {
+  visibility: visible;
+}
+
+.nb-menu-acordeon .menu-drawer__inner-submenu {
+  height: auto;
+  overflow: visible;
+}
+
+.nb-menu-acordeon .menu-drawer__close-button {
+  display: none;
+}
+
+/* Flecha → + / – */
+.nb-menu-acordeon summary.menu-drawer__menu-item > .svg-wrapper {
+  display: none;
+}
+
+.nb-menu-acordeon summary.menu-drawer__menu-item::after {
+  content: '+';
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.nb-menu-acordeon details[open] > summary.menu-drawer__menu-item::after {
+  content: '–';
+}
+
+/* Enlaces de segundo nivel: más pequeños y con sangría */
+.nb-menu-acordeon .menu-drawer__submenu .menu-drawer__menu-item {
+  font-size: 1.5rem;
+  padding: 0.7rem 3rem 0.7rem 4.2rem;
+}
+
+.nb-menu-acordeon .menu-drawer__submenu .menu-drawer__menu {
+  padding-bottom: 0.8rem;
+}
+
+.nb-menu-item--thumb {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nb-menu-thumb {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.6rem;
+  object-fit: cover;
+  flex: none;
+}
+
+/* Enlaces secundarios e inicio de sesión */
+.nb-menu-extra {
+  display: grid;
+  gap: 0.4rem;
+  padding: 1.6rem 3rem 2rem;
+  border-top: 1px solid rgba(var(--color-foreground), 0.1);
+}
+
+.nb-menu-extra:empty {
+  display: none;
+}
+
+.nb-menu-secundario {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0 0 0.8rem;
+  padding: 0;
+}
+
+.nb-menu-secundario a {
+  display: inline-block;
+  padding: 0.6rem 0;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.nb-menu-cuenta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.6rem 0;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.nb-menu-cuenta svg {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+/* Redes centradas */
+.menu-drawer .list-social {
+  justify-content: center;
+  margin-left: 0;
+}

@@ -37,7 +37,8 @@ Documentos de referencia (léelos antes de tocar código):
   - Rosa profundo `#C2476A`: solo en detalles pequeños (etiquetas, ahorro, enlaces) sobre fondo blanco. **Nunca predominante.**
   - Rubor `#FDF1F4`: fondos suaves, con moderación.
   - Noche `#0E0B0D`: solo para el modo Oscuridad de la carta de color.
-- Tipografía (validada): **Cormorant** (display) + **Inter** (texto), desde el `font_picker` de Shopify. Escala modular [pendiente].
+- Tipografía (validada 29/09/2026 en el comparador): **Cormorant** (títulos) + **Montserrat** (texto), desde el `font_picker` de Shopify. Escala modular [pendiente].
+- Botones: **redondeados (pastilla)**. En la ficha, "Añadir al carrito" con contorno fino y pago rápido debajo en negro.
 - Forma de las uñas en muestrarios: **almendra** real de manicura: larga y estilizada, laterales casi rectos desde la cutícula y afinado progresivo en el último tercio hasta una punta suave redondeada. Nada de óvalos ni formas de huevo.
 - Acabado del esmalte al representarlo: **micro-shimmer muy fino** (polvo diminuto plateado / blanco perlado, uniforme, que destella al moverse) + ligero veteado aterciopelado dentro del color. Nunca glitter grueso ni escamas: "polvo de estrellas", no "fiesta".
 - Radio, sombras y espaciados: tokens en `assets/nb-tokens.css`.
@@ -45,6 +46,7 @@ Documentos de referencia (léelos antes de tocar código):
 - Tonos del kit (nombres exactos de la etiqueta): Nebulosa Roseta `#C61F6B`, Capella `#98B41D`, Nebulosa Esmeralda `#1D7B42`, Andrómeda `#15698A`, Nebulosa de Orión `#D0419E`, Supernova `#D7442E`.
 - Fotos de marca en `docs/fotos/` (fuera de git; se suben a Shopify, no a `assets/`): bote por tono, pincel macro por tono, bote brillando en oscuridad por tono, caja abierta/cerrada y grupo de 6.
 - Maqueta de referencia validada: https://claude.ai/artifact/34PpY8NivUVGFGwPRrMpyZ
+- Comparador de diseño (elecciones de Miguel, 29/09/2026): https://claude.ai/artifact/FYGkRYDxtwBcSvJPx4qLLi. Se eligió: tipografía C, colores A, botones B, anuncios B (marquee con corazones), cabecera A, menú B (acordeón con miniaturas), tonos A (carta de color en inicio y ficha), ficha B (estrellas, precio grande, cantidad), galería A (miniaturas), sin caja de descuento, confianza B (iconos), desplegables B (+/–).
 
 ## Voz de marca
 Cercana, amigable y profesional dentro del nicho: hablamos de tú a una colega del oficio. Usamos el vocabulario técnico con naturalidad ("ojo de gato luminiscente"). Lema, tal como va impreso en la caja: "Tu arte inspira el nuestro". Evitamos el tono cursi de "tienda de belleza" genérica. Palabras prohibidas: [pendiente].

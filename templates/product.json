@@ -12,15 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
+          "settings": {}
+        },
+        "rating": {
+          "type": "rating",
           "settings": {}
         },
         "price": {
@@ -42,29 +39,53 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": false
+          }
+        },
+        "confianza": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "heading_1": "Envío en 24/48 h",
+            "icon_2": "return",
+            "heading_2": "Devoluciones en 14 días",
+            "icon_3": "lock",
+            "heading_3": "Pago seguro"
           }
         },
         "description": {
           "type": "description",
           "settings": {}
         },
-        "share": {
-          "type": "share",
+        "como_aplicar": {
+          "type": "collapsible_tab",
           "settings": {
-            "share_label": "Share"
+            "heading": "Cómo se aplica",
+            "icon": "none",
+            "content": "<p>Es un esmalte semipermanente: necesita lámpara UV/LED para curar cada capa.</p>"
+          }
+        },
+        "envios": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Envíos y devoluciones",
+            "icon": "none",
+            "content": "<p>Envío en 24/48 h a toda España. Tienes 14 días para devolver tu pedido.</p>"
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
+        "rating",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "confianza",
         "description",
-        "share"
+        "como_aplicar",
+        "envios"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -72,8 +93,8 @@
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
-        "mobile_thumbnails": "hide",
+        "gallery_layout": "thumbnail",
+        "mobile_thumbnails": "show",
         "media_position": "left",
         "image_zoom": "lightbox",
         "hide_variants": false,
@@ -82,35 +103,95 @@
         "padding_bottom": 24
       }
     },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 68
-      }
-    },
     "disclosures": {
       "type": "disclosures",
       "settings": {
         "padding_top": 36,
         "padding_bottom": 0
       }
+    },
+    "nb_carta_color": {
+      "type": "nb-carta-color",
+      "blocks": {
+        "tono_roseta": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa Roseta",
+            "descripcion": "Fucsia frambuesa con micro-shimmer plateado.",
+            "color": "#C61F6B",
+            "color_brillo": "#FF2E9A"
+          }
+        },
+        "tono_capella": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Capella",
+            "descripcion": "Verde lima con micro-shimmer dorado.",
+            "color": "#98B41D",
+            "color_brillo": "#D4FF3A"
+          }
+        },
+        "tono_esmeralda": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa Esmeralda",
+            "descripcion": "Verde esmeralda con micro-shimmer plateado.",
+            "color": "#1D7B42",
+            "color_brillo": "#2BFF6A"
+          }
+        },
+        "tono_andromeda": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Andrómeda",
+            "descripcion": "Azul petróleo con micro-shimmer plateado.",
+            "color": "#15698A",
+            "color_brillo": "#2EC8FF"
+          }
+        },
+        "tono_orion": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa de Orión",
+            "descripcion": "Magenta orquídea con micro-shimmer plateado.",
+            "color": "#D0419E",
+            "color_brillo": "#FF3FD0"
+          }
+        },
+        "tono_supernova": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Supernova",
+            "descripcion": "Coral intenso con micro-shimmer dorado.",
+            "color": "#D7442E",
+            "color_brillo": "#FF3B2A"
+          }
+        }
+      },
+      "block_order": [
+        "tono_roseta",
+        "tono_capella",
+        "tono_esmeralda",
+        "tono_andromeda",
+        "tono_orion",
+        "tono_supernova"
+      ],
+      "settings": {
+        "titulo": "Los seis tonos del kit",
+        "tamano_titulo": "h1",
+        "texto": "<p>Toca un tono para verlo de cerca. Apaga la luz para ver cómo brilla.</p>",
+        "modo_inicial": "luz",
+        "mostrar_compra": false,
+        "nota_kit": "Los seis tonos vienen juntos en el kit.",
+        "color_scheme": "scheme-1",
+        "padding_top": 32,
+        "padding_bottom": 56
+      }
     }
   },
   "order": [
     "main",
-    "disclosures",
-    "related-products"
+    "nb_carta_color",
+    "disclosures"
   ]
 }
