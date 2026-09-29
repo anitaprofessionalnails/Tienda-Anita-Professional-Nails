@@ -1,5 +1,7 @@
 # Ficha para crear el producto en Shopify
 
+> **Estado (29/09/2026):** creado y publicado por Claude vía Admin API (`kit-ojo-de-gato-luminiscente`). Inventario **sin seguimiento** hasta saber las unidades. En stand by: peso de la caja e INCI.
+
 Shopify → **Productos → Añadir producto**. Copia cada campo tal cual.
 
 ## Título
