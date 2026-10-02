@@ -8,7 +8,7 @@
 2. **Lujo minimalista, nunca "choni"**: frases cortas y limpias, una idea por frase, deseo estilo Apple. Como mucho **un emoji de corazón** en el cierre.
 3. La exclusividad se cuenta con **datos reales**: 500 cajas, sin reposición, pack indivisible de 6 tonos. **Nunca** insinuar que quedan pocas si no es verdad.
 4. Prometemos **solo lo demostrable**: brillo en la oscuridad y efecto ojo de gato, mostrados con grabaciones reales. Nada de "sin TPO", "vegano", "HEMA free" ni "conseguirás más clientas" mientras no esté documentado.
-5. **Precio claro y completo**: precio de lanzamiento con IVA (y envío, ver conflicto abajo) incluido, y aviso de que **base, top e imán no van incluidos**.
+5. **Precio claro y completo**: precio de lanzamiento con IVA incluido (envío gratis solo para suscriptoras de la newsletter), y aviso de que **base, top e imán no van incluidos**.
 
 ## La marca
 - **Empresa:** Anita Professional Nails S.L. Instagram: @anitaprofessionalnails (~2.500 seguidoras profesionales; objetivo 5.000 a final de año).
@@ -20,7 +20,7 @@
 - **No incluye** base, top ni imán.
 - Tonos: Nebulosa Roseta, Capella, Nebulosa Esmeralda, Andrómeda, Nebulosa de Orión, Supernova. Por qué esos nombres: *No consta* (son astronómicos).
 - **Tirada:** 576 cajas, **500 a la venta** y 76 de regalo. **Sin reposición** ("no volverá"). Drop 002 previsto con 1.000 cajas.
-- **Precio:** lanzamiento **79,98 €**, oficial **99,98 €**, IVA y envío incluidos (memoria del 30/09/2026; el PDF antiguo decía 79,99 / 99,99).
+- **Precio:** lanzamiento **79,98 €**, oficial **99,98 €**, IVA incluido. Envío gratis **solo** para suscriptoras de la newsletter (confirmado 02/10/2026; el documento decía "envío incluido").
 - **Diferencial real:** brilla en la oscuridad **en el mismo color de cada esmalte** y con mucha intensidad, "como una barrita luminosa" (palabras de Miguel; no verificado por ensayo, así que se enseña con vídeo y no se cuantifica). Ojo de gato. Edición limitada a 500 cajas. Packaging propio: mármol rosa con monograma "AB" y tapones cromados rosa.
 - **Etiqueta:** "UV/LED · Esmalte Semipermanente · Ed. Limitada · 15 ml e. 0.50 oz".
 - **Tapa interior de la caja** (único texto publicado por la marca): "Tu arte inspira el nuestro. Gracias por llevar contigo un trocito de la ilusión con la que creamos cada producto. Anita Professional Nails ❤️"
@@ -55,7 +55,7 @@
 Miguel, como Persona Responsable, valida cualquier claim antes de publicarlo (Reg. CE 1223/2009 y Reg. UE 655/2013).
 
 ## Conflictos abiertos con decisiones anteriores (pendientes de confirmar)
-- **Paleta:** la web usa Rosa Anita `#F48BA0` (validado 24/09). El documento dice rosa-lila `#EFB1F7`.
-- **Tipografía:** la web usa Cormorant + Montserrat (comparador 29/09). El documento dice Allura + Playfair Display + Montserrat.
-- **Envío:** el 29/09 se confirmó "envío gratis solo para suscriptoras de la newsletter". El documento dice precio "con IVA y envío incluidos".
-- **Público:** el PRD decía doble público (profesionales y casa). El documento dice solo profesionales.
+- **Paleta:** ✅ RESUELTO 02/10/2026: se mantiene Rosa Anita `#F48BA0` en la web.
+- **Tipografía:** pendiente, comparativa en https://claude.ai/artifact/6SSDvehazHjbTrAd2PWafL. La web usa Cormorant + Montserrat (comparador 29/09). El documento dice Allura + Playfair Display + Montserrat.
+- **Envío:** ✅ RESUELTO 02/10/2026: envío gratis solo con la newsletter.
+- **Público:** ✅ manda el documento: profesionales (se aceptan particulares, pero no se escribe para ellas).
