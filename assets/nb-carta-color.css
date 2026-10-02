@@ -148,11 +148,11 @@
   display: block;
   position: relative;
   overflow: hidden;
-  aspect-ratio: 4 / 9;
-  /* forma almendra: laterales casi rectos y afinado en el último tercio */
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 225' preserveAspectRatio='none'%3E%3Cpath d='M44 2.7C47 0 53 0 56 2.7C80 31.5 97 81 97.5 126V189C97.5 213.8 77 225 50 225S2.5 213.8 2.5 189V126C3 81 20 31.5 44 2.7Z'/%3E%3C/svg%3E")
+  aspect-ratio: 5 / 9;
+  /* forma almendra suave: punta redondeada, lo más ancho hacia la cutícula y base curva */
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 180' preserveAspectRatio='none'%3E%3Cpath d='M50 0C66 0 80 14 89 40C96 62 100 88 100 110C100 150 79 180 50 180S0 150 0 110C0 88 4 62 11 40C20 14 34 0 50 0Z'/%3E%3C/svg%3E")
     center / 100% 100% no-repeat;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 225' preserveAspectRatio='none'%3E%3Cpath d='M44 2.7C47 0 53 0 56 2.7C80 31.5 97 81 97.5 126V189C97.5 213.8 77 225 50 225S2.5 213.8 2.5 189V126C3 81 20 31.5 44 2.7Z'/%3E%3C/svg%3E")
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 180' preserveAspectRatio='none'%3E%3Cpath d='M50 0C66 0 80 14 89 40C96 62 100 88 100 110C100 150 79 180 50 180S0 150 0 110C0 88 4 62 11 40C20 14 34 0 50 0Z'/%3E%3C/svg%3E")
     center / 100% 100% no-repeat;
   background: linear-gradient(
     100deg,

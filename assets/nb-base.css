@@ -143,3 +143,11 @@ body {
 :focus-visible {
   outline-color: var(--nb-rosa-profundo);
 }
+
+/* Logo oficial: más contenido en móvil para que la cabecera no crezca */
+@media screen and (max-width: 749px) {
+  .header__heading-logo {
+    max-width: 9.6rem;
+    height: auto;
+  }
+}

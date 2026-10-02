@@ -39,7 +39,7 @@ Documentos de referencia (léelos antes de tocar código):
   - Noche `#0E0B0D`: solo para el modo Oscuridad de la carta de color.
 - Tipografía (validada 02/10/2026, sustituye a Cormorant): **Playfair Display** (títulos, `playfair_display_n5`) + **Montserrat** (texto), desde el `font_picker` de Shopify. **Allura** (caligráfica, `assets/nb-allura.woff2`) solo para el lema "Tu arte inspira el nuestro" en la sección `nb-lema`. Escala modular [pendiente].
 - Botones: **redondeados (pastilla)**. En la ficha, "Añadir al carrito" con contorno fino y pago rápido debajo en negro.
-- Forma de las uñas en muestrarios: **almendra** real de manicura: larga y estilizada, laterales casi rectos desde la cutícula y afinado progresivo en el último tercio hasta una punta suave redondeada. Nada de óvalos ni formas de huevo.
+- Forma de las uñas en muestrarios (corregida 02/10/2026 con foto de referencia): **almendra suave** de manicura: base de cutícula **curva** (nunca plana), lo más ancho hacia la cutícula y afinado gradual hasta una **punta redondeada** (nunca puntiaguda). Proporción 5:9. Máscara SVG en `assets/nb-carta-color.css`.
 - Acabado del esmalte al representarlo: **micro-shimmer muy fino** (polvo diminuto plateado / blanco perlado, uniforme, que destella al moverse) + ligero veteado aterciopelado dentro del color. Nunca glitter grueso ni escamas: "polvo de estrellas", no "fiesta".
 - Radio, sombras y espaciados: tokens en `assets/nb-tokens.css`.
 - Una sola "pieza memorable": la **carta de color** con interruptor **Luz / Oscuridad** (home y ficha). En Oscuridad el fondo pasa a Noche y cada tono muestra su foto brillando. Es el único momento oscuro de la web; el resto, silencioso y disciplinado.
