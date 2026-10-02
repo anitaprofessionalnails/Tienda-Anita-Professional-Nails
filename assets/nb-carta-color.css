@@ -89,12 +89,6 @@
   gap: var(--nb-e-3);
 }
 
-@media screen and (min-width: 750px) {
-  .nb-carta__tonos {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-}
-
 .nb-carta__tono {
   all: unset;
   box-sizing: border-box;
@@ -242,22 +236,36 @@
   display: none;
 }
 
+/* Ordenador: a la izquierda cabecera, uñas (2 filas de 3), nombre y compra; a la derecha, la foto del tono */
 @media screen and (min-width: 750px) {
-  .nb-carta__paneles {
+  .nb-carta__interior {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: auto 1fr;
+    /* la última fila flexible absorbe la altura de la foto sin separar los bloques de la izquierda */
+    grid-template-rows: repeat(4, auto) 1fr;
     column-gap: var(--nb-e-7);
+    row-gap: var(--nb-e-5);
     align-items: start;
   }
 
-  .nb-carta__fotos {
-    grid-column: 1;
-    grid-row: 1 / span 2;
+  .nb-carta__paneles {
+    display: contents;
   }
 
+  .nb-carta__cabecera,
+  .nb-carta__tonos,
   .nb-carta__info,
   .nb-carta__compra {
+    grid-column: 1;
+  }
+
+  .nb-carta__fotos {
     grid-column: 2;
+    grid-row: 1 / -1;
+  }
+
+  .nb-carta__info {
+    border-top: 1px solid var(--nb-borde-modo);
+    padding-top: var(--nb-e-5);
   }
 }
 

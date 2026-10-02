@@ -164,7 +164,7 @@
           "settings": {
             "button_label": "Ver el kit",
             "button_link": "shopify://products/kit-ojo-de-gato-luminiscente",
-            "button_style_secondary": true
+            "button_style_secondary": false
           }
         }
       },
@@ -196,7 +196,7 @@
           "type": "column",
           "settings": {
             "title": "Brilla en su mismo color",
-            "text": "<p>Apaga la luz: la Nebulosa Roseta sigue siendo fucsia y Andrómeda, azul. Compruébalo tú misma.</p>",
+            "text": "<p>Apaga la luz y sostén la galaxia en tus manos. Compruébalo tú misma.</p>",
             "link_label": "",
             "link": ""
           }

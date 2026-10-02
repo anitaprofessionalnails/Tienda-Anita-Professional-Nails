@@ -151,3 +151,34 @@ body {
     height: auto;
   }
 }
+
+/* "El acabado que te van a pedir": línea rosa fina entre las tres columnas */
+[id$='__por_que'] .multicolumn-list__item {
+  position: relative;
+}
+[id$='__por_que'] .multicolumn-list__item + .multicolumn-list__item::before {
+  content: '';
+  position: absolute;
+  background: var(--nb-rosa);
+  /* móvil: línea horizontal centrada entre columnas apiladas */
+  top: calc(var(--grid-mobile-vertical-spacing) / -2 - 1.2rem);
+  left: 30%;
+  right: 30%;
+  height: 1px;
+}
+@media screen and (max-width: 749px) {
+  [id$='__por_que'] .multicolumn-list__item + .multicolumn-list__item {
+    margin-top: 2.4rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  [id$='__por_que'] .multicolumn-list__item + .multicolumn-list__item::before {
+    /* ordenador: línea vertical en mitad del hueco entre columnas */
+    top: 15%;
+    bottom: 15%;
+    left: calc(var(--grid-desktop-horizontal-spacing) / -2);
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+}
