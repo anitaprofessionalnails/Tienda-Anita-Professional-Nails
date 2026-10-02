@@ -85,6 +85,12 @@ body {
   }
 }
 
+/* "Por qué Anita" (multicolumn "por_que"): título centrado como las columnas */
+[id$='__por_que'] .title-wrapper-with-link {
+  justify-content: center;
+  text-align: center;
+}
+
 /* Precio tachado discreto */
 .price--on-sale .price-item--regular {
   color: rgba(var(--color-foreground), 0.55);
