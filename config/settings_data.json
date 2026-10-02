@@ -10,8 +10,8 @@
 {
   "current": {
     "logo_width": 70,
-    "type_header_font": "cormorant_n5",
-    "heading_scale": 135,
+    "type_header_font": "playfair_display_n5",
+    "heading_scale": 115,
     "type_body_font": "montserrat_n4",
     "body_scale": 100,
     "page_width": 1200,

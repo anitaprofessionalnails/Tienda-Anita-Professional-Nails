@@ -3,7 +3,7 @@
  * Solo afinado tipográfico y de detalle; los colores vienen de los esquemas del personalizador.
  */
 
-/* Cormorant tiene ojo pequeño: más contraste de tamaño y titulares compactos */
+/* Titulares en Playfair Display: compactos y equilibrados */
 h1, h2, h3, .h0, .h1, .h2, .h3 {
   letter-spacing: -0.005em;
   line-height: 1.1;
@@ -89,6 +89,45 @@ body {
 [id$='__por_que'] .title-wrapper-with-link {
   justify-content: center;
   text-align: center;
+}
+
+/* Lema caligráfico (sections/nb-lema.liquid) */
+.nb-lema__interior {
+  display: grid;
+  justify-items: center;
+  gap: 1.6rem;
+  text-align: center;
+}
+.nb-lema__titular {
+  margin: 0;
+  max-width: 22ch;
+}
+.nb-lema__texto,
+.nb-lema__texto p {
+  margin: 0;
+  max-width: 48ch;
+  color: rgba(var(--color-foreground), 0.75);
+}
+.nb-lema__boton {
+  margin-top: 0.4rem;
+}
+.nb-lema__lema {
+  margin: 1.6rem 0 0;
+  font-family: 'Allura', 'Brush Script MT', cursive;
+  font-weight: 400;
+  font-size: 4.4rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 750px) {
+  .nb-lema__lema {
+    font-size: 5.6rem;
+  }
+}
+.nb-lema__firma {
+  margin: -0.6rem 0 0;
+  font-size: 1.3rem;
+  color: rgba(var(--color-foreground), 0.7);
 }
 
 /* Precio tachado discreto */

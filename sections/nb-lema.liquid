@@ -1,0 +1,137 @@
+{%- comment -%}
+  Lema de Anita Professional Nails en letra caligráfica (Allura, alojada en assets/nb-allura.woff2).
+  Opcionalmente, antes del lema: un titular, un texto y un botón.
+{%- endcomment -%}
+
+{%- style -%}
+  @font-face {
+    font-family: 'Allura';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('{{ 'nb-allura.woff2' | asset_url }}') format('woff2');
+  }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="nb-lema color-{{ section.settings.color_scheme }} gradient">
+  <div class="nb-lema__interior page-width section-{{ section.id }}-padding">
+    {%- if section.settings.titular != blank -%}
+      <h2 class="nb-lema__titular {{ section.settings.tamano_titular }}">{{ section.settings.titular | escape }}</h2>
+    {%- endif -%}
+    {%- if section.settings.texto != blank -%}
+      <div class="nb-lema__texto rte">{{ section.settings.texto }}</div>
+    {%- endif -%}
+    {%- if section.settings.boton_texto != blank -%}
+      <a
+        class="button nb-lema__boton"
+        {% if section.settings.boton_enlace != blank %}
+          href="{{ section.settings.boton_enlace }}"
+        {% else %}
+          role="link" aria-disabled="true"
+        {% endif %}
+      >
+        {{- section.settings.boton_texto | escape -}}
+      </a>
+    {%- endif -%}
+    {%- if section.settings.lema != blank -%}
+      <p class="nb-lema__lema">{{ section.settings.lema | escape }}</p>
+    {%- endif -%}
+    {%- if section.settings.firma != blank -%}
+      <p class="nb-lema__firma">{{ section.settings.firma | escape }}</p>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Lema caligráfico",
+  "tag": "section",
+  "class": "section nb-lema-seccion",
+  "settings": [
+    {
+      "type": "text",
+      "id": "titular",
+      "label": "Titular (opcional)"
+    },
+    {
+      "type": "select",
+      "id": "tamano_titular",
+      "label": "Tamaño del titular",
+      "options": [
+        { "value": "h2", "label": "Pequeño" },
+        { "value": "h1", "label": "Mediano" },
+        { "value": "h0", "label": "Grande" }
+      ],
+      "default": "h1"
+    },
+    {
+      "type": "richtext",
+      "id": "texto",
+      "label": "Texto (opcional)"
+    },
+    {
+      "type": "text",
+      "id": "boton_texto",
+      "label": "Texto del botón (opcional)"
+    },
+    {
+      "type": "url",
+      "id": "boton_enlace",
+      "label": "Enlace del botón"
+    },
+    {
+      "type": "text",
+      "id": "lema",
+      "label": "Lema (letra caligráfica)",
+      "default": "Tu arte inspira el nuestro"
+    },
+    {
+      "type": "text",
+      "id": "firma",
+      "label": "Firma",
+      "default": "Anita Professional Nails ❤️"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Esquema de color",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Espacio superior",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Espacio inferior",
+      "default": 56
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lema caligráfico"
+    }
+  ]
+}
+{% endschema %}

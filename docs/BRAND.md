@@ -56,6 +56,6 @@ Miguel, como Persona Responsable, valida cualquier claim antes de publicarlo (Re
 
 ## Conflictos abiertos con decisiones anteriores (pendientes de confirmar)
 - **Paleta:** ✅ RESUELTO 02/10/2026: se mantiene Rosa Anita `#F48BA0` en la web.
-- **Tipografía:** pendiente, comparativa en https://claude.ai/artifact/6SSDvehazHjbTrAd2PWafL. La web usa Cormorant + Montserrat (comparador 29/09). El documento dice Allura + Playfair Display + Montserrat.
+- **Tipografía:** ✅ RESUELTO 02/10/2026: opción B, Playfair Display + Montserrat, y Allura solo en el lema. Comparativa en https://claude.ai/artifact/6SSDvehazHjbTrAd2PWafL. La web usa Cormorant + Montserrat (comparador 29/09). El documento dice Allura + Playfair Display + Montserrat.
 - **Envío:** ✅ RESUELTO 02/10/2026: envío gratis solo con la newsletter.
 - **Público:** ✅ manda el documento: profesionales (se aceptan particulares, pero no se escribe para ellas).

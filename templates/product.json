@@ -63,7 +63,7 @@
           "settings": {
             "heading": "Cómo se aplica",
             "icon": "none",
-            "content": "<p>Es un esmalte semipermanente: necesita lámpara UV/LED para curar cada capa.</p>"
+            "content": "<p>Semipermanente UV/LED: cura cada capa en lámpara. Efecto magnético: se trabaja con imán.</p><p>Base, top e imán no incluidos: usa los de tu mesa.</p>"
           }
         },
         "envios": {
@@ -117,7 +117,7 @@
           "type": "tono",
           "settings": {
             "nombre": "Nebulosa Roseta",
-            "descripcion": "Fucsia frambuesa con micro-shimmer plateado.",
+            "descripcion": "Fucsia frambuesa con micro-shimmer.",
             "color": "#C61F6B",
             "color_brillo": "#FF2E9A",
             "imagen": "shopify://shop_images/04-pincel-nebulosa-roseta.png"
@@ -127,7 +127,7 @@
           "type": "tono",
           "settings": {
             "nombre": "Capella",
-            "descripcion": "Verde lima con micro-shimmer dorado.",
+            "descripcion": "Verde lima con micro-shimmer.",
             "color": "#98B41D",
             "color_brillo": "#D4FF3A",
             "imagen": "shopify://shop_images/05-pincel-capella.png"
@@ -137,7 +137,7 @@
           "type": "tono",
           "settings": {
             "nombre": "Nebulosa Esmeralda",
-            "descripcion": "Verde esmeralda con micro-shimmer plateado.",
+            "descripcion": "Verde esmeralda con micro-shimmer.",
             "color": "#1D7B42",
             "color_brillo": "#2BFF6A",
             "imagen": "shopify://shop_images/06-pincel-nebulosa-esmeralda.png"
@@ -147,7 +147,7 @@
           "type": "tono",
           "settings": {
             "nombre": "Andrómeda",
-            "descripcion": "Azul petróleo con micro-shimmer plateado.",
+            "descripcion": "Azul petróleo con micro-shimmer.",
             "color": "#15698A",
             "color_brillo": "#2EC8FF",
             "imagen": "shopify://shop_images/07-pincel-andromeda.png"
@@ -157,7 +157,7 @@
           "type": "tono",
           "settings": {
             "nombre": "Nebulosa de Orión",
-            "descripcion": "Magenta orquídea con micro-shimmer plateado.",
+            "descripcion": "Magenta orquídea con micro-shimmer.",
             "color": "#D0419E",
             "color_brillo": "#FF3FD0",
             "imagen": "shopify://shop_images/08-pincel-nebulosa-de-orion.png"
@@ -167,7 +167,7 @@
           "type": "tono",
           "settings": {
             "nombre": "Supernova",
-            "descripcion": "Coral intenso con micro-shimmer dorado.",
+            "descripcion": "Coral intenso con micro-shimmer.",
             "color": "#D7442E",
             "color_brillo": "#FF3B2A",
             "imagen": "shopify://shop_images/09-pincel-supernova.png"
@@ -185,10 +185,10 @@
       "settings": {
         "titulo": "Los seis tonos del kit",
         "tamano_titulo": "h1",
-        "texto": "<p>Toca un tono para verlo de cerca. Apaga la luz para ver cómo brilla.</p>",
+        "texto": "<p>Toca un tono. Después, apaga la luz.</p>",
         "modo_inicial": "luz",
         "mostrar_compra": false,
-        "nota_kit": "Los seis tonos vienen juntos en el kit.",
+        "nota_kit": "Los seis tonos van juntos en la caja. IVA incluido. Base, top e imán no incluidos: usa los de tu mesa.",
         "color_scheme": "scheme-1",
         "padding_top": 32,
         "padding_bottom": 56

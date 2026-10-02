@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "",
             "link": ""
           }
         }
@@ -60,28 +60,28 @@
         "mensaje_1": {
           "type": "mensaje",
           "settings": {
-            "texto": "Envío en 24/48 h",
+            "texto": "Edición única de 500 cajas",
             "enlace": ""
           }
         },
         "mensaje_2": {
           "type": "mensaje",
           "settings": {
-            "texto": "Precio de lanzamiento 79,98 €",
+            "texto": "Sin reposición, sin segunda tirada",
             "enlace": ""
           }
         },
         "mensaje_3": {
           "type": "mensaje",
           "settings": {
-            "texto": "Devoluciones en 14 días",
+            "texto": "Precio de lanzamiento 79,98 €",
             "enlace": ""
           }
         },
         "mensaje_4": {
           "type": "mensaje",
           "settings": {
-            "texto": "Edición limitada",
+            "texto": "Envío en 24/48 h",
             "enlace": ""
           }
         }

@@ -37,7 +37,7 @@ Documentos de referencia (léelos antes de tocar código):
   - Rosa profundo `#C2476A`: solo en detalles pequeños (etiquetas, ahorro, enlaces) sobre fondo blanco. **Nunca predominante.**
   - Rubor `#FDF1F4`: fondos suaves, con moderación.
   - Noche `#0E0B0D`: solo para el modo Oscuridad de la carta de color.
-- Tipografía (validada 29/09/2026 en el comparador): **Cormorant** (títulos) + **Montserrat** (texto), desde el `font_picker` de Shopify. Escala modular [pendiente].
+- Tipografía (validada 02/10/2026, sustituye a Cormorant): **Playfair Display** (títulos, `playfair_display_n5`) + **Montserrat** (texto), desde el `font_picker` de Shopify. **Allura** (caligráfica, `assets/nb-allura.woff2`) solo para el lema "Tu arte inspira el nuestro" en la sección `nb-lema`. Escala modular [pendiente].
 - Botones: **redondeados (pastilla)**. En la ficha, "Añadir al carrito" con contorno fino y pago rápido debajo en negro.
 - Forma de las uñas en muestrarios: **almendra** real de manicura: larga y estilizada, laterales casi rectos desde la cutícula y afinado progresivo en el último tercio hasta una punta suave redondeada. Nada de óvalos ni formas de huevo.
 - Acabado del esmalte al representarlo: **micro-shimmer muy fino** (polvo diminuto plateado / blanco perlado, uniforme, que destella al moverse) + ligero veteado aterciopelado dentro del color. Nunca glitter grueso ni escamas: "polvo de estrellas", no "fiesta".
