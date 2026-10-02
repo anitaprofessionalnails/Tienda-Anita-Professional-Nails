@@ -3,7 +3,7 @@
 Lee este archivo entero al inicio de cada sesión. Es la fuente de verdad del proyecto.
 
 ## Qué es este proyecto
-Estamos construyendo el tema de Shopify de Anita Professional Nails, una marca española de esmaltes de uñas fundada por Miguel y Anita. Vende un único producto: un pack de 6 esmaltes "ojo de gato luminiscente", dirigido a profesionales de uñas y a clientas que se hacen la manicura en casa. El objetivo es una tienda premium, editorial y con personalidad propia que NO parezca un tema de Shopify por defecto, y que convierta bien en móvil (más del 75 % del tráfico vendrá de Instagram/TikTok en móvil).
+Estamos construyendo el tema de Shopify de Anita Professional Nails, una marca española de esmaltes de uñas fundada por Miguel Ángel y Ana (Anita Professional Nails S.L.). Vende un único producto: un pack de 6 esmaltes "ojo de gato luminiscente", dirigido a profesionales de uñas y a clientas que se hacen la manicura en casa. El objetivo es una tienda premium, editorial y con personalidad propia que NO parezca un tema de Shopify por defecto, y que convierta bien en móvil (más del 75 % del tráfico vendrá de Instagram/TikTok en móvil).
 
 Documentos de referencia (léelos antes de tocar código):
 - `docs/PRD.md`: requisitos completos de diseño, estructura y páginas. Si algo del PRD choca con una petición mía, pregúntame antes de decidir.
@@ -49,7 +49,13 @@ Documentos de referencia (léelos antes de tocar código):
 - Comparador de diseño (elecciones de Miguel, 29/09/2026): https://claude.ai/artifact/FYGkRYDxtwBcSvJPx4qLLi. Se eligió: tipografía C, colores A, botones B, anuncios B (marquee con corazones), cabecera A, menú B (acordeón con miniaturas), tonos A (carta de color en inicio y ficha), ficha B (estrellas, precio grande, cantidad), galería A (miniaturas), sin caja de descuento, confianza B (iconos), desplegables B (+/–).
 
 ## Voz de marca
-Cercana, amigable y profesional dentro del nicho: hablamos de tú a una colega del oficio. Usamos el vocabulario técnico con naturalidad ("ojo de gato luminiscente"). Lema, tal como va impreso en la caja: "Tu arte inspira el nuestro". Evitamos el tono cursi de "tienda de belleza" genérica. Palabras prohibidas: [pendiente].
+**Fuente de verdad: `docs/BRAND.md` (identidad de marca y voz de Miguel Ángel, 02/10/2026). Prevalece sobre lo anterior de este archivo y del PRD en público, voz y claims.** Resumen:
+1. De tú a una **profesional de las uñas** (manicurista o técnica), con calidez y gratitud: "Tu arte inspira el nuestro". No escribimos para "hacerte las uñas en casa".
+2. Lujo minimalista estilo Apple, nunca "choni": frases cortas, una idea por frase. Como mucho un ❤️ al cierre.
+3. Exclusividad con datos reales: 500 cajas, sin reposición, pack indivisible de 6. Nunca escasez inventada.
+4. Solo claims demostrables (brillo y ojo de gato, con vídeo real, sin cuantificar). Nada de "sin TPO", "vegano" ni "conseguirás más clientas".
+5. Precio claro y completo; base, top e imán **no** van incluidos.
+Paleta, tipografía y envío del documento chocan con lo validado antes: ver "Conflictos abiertos" en `docs/BRAND.md` y no cambiar el diseño sin confirmarlo.
 
 ## Skills y herramientas
 - Para cualquier decisión visual, primero se propone el plan de tokens (color, tipografía, espaciado) y se valida conmigo antes de maquetar secciones.
