@@ -245,9 +245,9 @@
     "cierre": {
       "type": "nb-lema",
       "settings": {
-        "titular": "¿Y si la de la esquina lo tiene y tú no?",
+        "titular": "¿Y si tu clienta lo ve en otras manos antes que en las suyas?",
         "tamano_titular": "h1",
-        "texto": "<p>Edición única de 500 cajas. Si no la tienes, no podrás ofrecerla.</p>",
+        "texto": "<p>Solo hay 500 cajas. Cuando se agoten, las que lo tengan serán las únicas que puedan ofrecerlo.</p>",
         "boton_texto": "Quiero mi caja",
         "boton_enlace": "shopify://products/kit-ojo-de-gato-luminiscente",
         "lema": "Tu arte inspira el nuestro",
