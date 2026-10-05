@@ -1,0 +1,31 @@
+{%- comment -%}
+  Enlace "Preferencias de cookies" del pie (lo exige la Política de cookies).
+  Abre el panel del banner de cookies de Shopify. Si el banner no está activo, el enlace no se muestra.
+{%- endcomment -%}
+<li class="nb-cookies-pref" hidden>
+  <small class="copyright__content">
+    <button type="button" class="nb-cookies-pref__boton">{{ 'nb.cookies.preferencias' | t }}</button>
+  </small>
+</li>
+<script>
+  (function () {
+    var item = document.currentScript.previousElementSibling;
+    var boton = item.querySelector('button');
+    function activar() {
+      if (window.privacyBanner && typeof window.privacyBanner.showPreferences === 'function') {
+        item.hidden = false;
+        return true;
+      }
+      return false;
+    }
+    boton.addEventListener('click', function () {
+      if (window.privacyBanner) window.privacyBanner.showPreferences();
+    });
+    if (!activar()) {
+      var intentos = 0;
+      var t = setInterval(function () {
+        if (activar() || ++intentos > 20) clearInterval(t);
+      }, 500);
+    }
+  })();
+</script>

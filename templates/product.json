@@ -49,7 +49,7 @@
             "icon_1": "truck",
             "heading_1": "Envío en 24/48 h",
             "icon_2": "return",
-            "heading_2": "Devoluciones en 14 días",
+            "heading_2": "Si llega dañada, caja nueva",
             "icon_3": "lock",
             "heading_3": "Pago seguro"
           }
@@ -71,7 +71,7 @@
           "settings": {
             "heading": "Envíos y devoluciones",
             "icon": "none",
-            "content": "<p>Envío en 24/48 h a toda España. Tienes 14 días para devolver tu pedido.</p>"
+            "content": "<p>Enviamos en 24/48 h laborables a la península y Baleares. El coste se muestra al pagar; para las suscriptoras de la newsletter, el envío es gratis.</p><p>Si un bote llega roto o la caja dañada, nosotras pagamos la devolución y te enviamos una caja nueva.</p><p>Por higiene, la devolución sin defecto (14 días, solo consumidoras) es posible únicamente con la caja precintada.</p>"
           }
         }
       },
