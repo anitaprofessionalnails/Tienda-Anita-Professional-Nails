@@ -35,8 +35,7 @@ Los colores de las fotos pueden variar ligeramente según la pantalla de tu disp
 ## 4. Precios
 
 - Los precios están en **euros (€)** e **incluyen el IVA** aplicable.
-- El **coste de envío** no está incluido en el precio del producto. Se calcula según la dirección de entrega y **se muestra en la pantalla de pago antes de que confirmes el pedido.**
-- Las suscriptoras de nuestra newsletter tienen **envío gratuito** en las condiciones que se indican en el email de bienvenida.
+- El **coste de envío** no está incluido en el precio del producto. Actualmente es de **6,99 €** a la península y Baleares, y **siempre se muestra en la pantalla de pago antes de que confirmes el pedido.**
 - El precio aplicable es el que se muestra en el momento de hacer el pedido. El **precio de lanzamiento** es una oferta temporal. Su precio de referencia es el precio oficial que se indica tachado.
 
 Si por un error técnico evidente apareciera un precio claramente equivocado, te avisaremos antes de enviar el pedido para que decidas si lo mantienes al precio correcto o lo cancelas con reembolso íntegro.
@@ -53,7 +52,7 @@ El contrato se celebra en **español**.
 
 ## 6. Formas de pago
 
-Puedes pagar con **tarjeta de crédito o débito, Apple Pay, Google Pay o Klarna**. Las opciones disponibles en cada momento se muestran en la pantalla de pago.
+Las **formas de pago disponibles** en cada momento (por ejemplo, tarjeta de crédito o débito, carteras digitales como Apple Pay o Google Pay, PayPal o Klarna) se muestran en la pantalla de pago antes de que confirmes el pedido.
 
 - Los pagos se procesan en entornos seguros de nuestros proveedores de pago. **No vemos ni guardamos los datos completos de tu tarjeta.**
 - Si eliges **Klarna**, el pago aplazado o fraccionado lo ofrece y gestiona Klarna con sus propias condiciones, que verás y aceptarás antes de pagar. Klarna puede aprobar o rechazar la operación.

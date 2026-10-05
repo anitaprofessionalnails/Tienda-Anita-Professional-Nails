@@ -11,15 +11,16 @@ Enviamos a la **España peninsular** y a las **Islas Baleares**.
 ## 2. Plazos
 
 - **Envío:** preparamos y **enviamos tu pedido en 24 a 48 horas laborables** desde que se confirma el pago.
-- **Entrega:** después, la empresa de transporte lo entrega en el plazo que corresponda al servicio elegido. Lo verás **en la pantalla de pago** al elegir el envío. Las Islas Baleares pueden tardar algo más que la península.
+- **Entrega:** después, la empresa de transporte lo entrega en su plazo habitual. Con el **número de seguimiento** podrás ver en todo momento dónde está. Las Islas Baleares pueden tardar algo más que la península.
 - Son días laborables de lunes a viernes, sin contar festivos nacionales ni de Castilla-La Mancha. Los pedidos hechos en fin de semana o festivo empiezan a contar el siguiente día laborable.
 
 En cualquier caso, **te entregaremos el pedido en un plazo máximo de 30 días naturales** desde la compra (art. 66 bis TRLGDCU). Si no pudiéramos cumplirlo, te avisaríamos y podrías cancelar el pedido con reembolso íntegro.
 
 ## 3. Coste del envío
 
-- El coste se calcula según la dirección de entrega y **lo ves en la pantalla de pago antes de confirmar el pedido.**
-- **Suscriptoras de la newsletter:** envío gratuito, en las condiciones que se indican en el email de bienvenida.
+- El envío estándar a la península y Baleares cuesta **6,99 €**.
+- El coste **siempre se muestra en la pantalla de pago antes de confirmar el pedido.**
+- Si en algún momento ofrecemos envío gratuito en una promoción, sus condiciones se indicarán en la propia promoción.
 
 ## 4. Seguimiento
 

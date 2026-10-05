@@ -26,7 +26,7 @@ En esta política te explicamos qué datos personales tratamos cuando visitas **
 
 ### c) Si te suscribes a la newsletter
 - **Datos:** email y, si nos los das, tu nombre.
-- **Para qué:** enviarte novedades, lanzamientos y promociones de Anita Professional Nails, incluida la ventaja de envío gratuito para suscriptoras.
+- **Para qué:** enviarte novedades, lanzamientos y promociones de Anita Professional Nails.
 - **Base legal:** tu consentimiento (art. 6.1.a RGPD y art. 21 LSSI). Puedes darte de baja en cualquier momento con el enlace que va al final de cada email, o escribiéndonos.
 
 ### d) Si nos escribes (formulario de contacto, email, teléfono o WhatsApp)
@@ -61,12 +61,15 @@ No vendemos tus datos. Solo los compartimos con los proveedores que necesitamos 
 | Proveedor | Para qué | Dónde |
 |---|---|---|
 | **Shopify International Limited** (Irlanda) | Plataforma de la tienda online, alojamiento de la web y gestión de pedidos y clientes | UE. Puede transferir datos a Canadá y a otros países (ver apartado 5) |
-| **Shopify Payments** y sus proveedores de pago | Cobro con tarjeta, Apple Pay y Google Pay | UE y otros países (ver apartado 5) |
-| **Klarna Bank AB (publ)** (Suecia) | Pago con Klarna, si lo eliges | UE |
-| **Klaviyo, Inc.** (EE. UU.) | Envío de la newsletter y emails de marketing | EE. UU. (ver apartado 5) |
+| **Shopify Payments** y sus proveedores de pago | Cobro con tarjeta y carteras digitales (Apple Pay, Google Pay) | UE y otros países (ver apartado 5) |
+| **PayPal (Europe) S.à r.l. et Cie, S.C.A.** (Luxemburgo) | Pago con PayPal, si lo eliges y está disponible | UE y otros países (ver apartado 5) |
+| **Klarna Bank AB (publ)** (Suecia) | Pago con Klarna, si lo eliges y está disponible | UE |
+| **Shopify** (Shopify Email) o **Klaviyo, Inc.** (EE. UU.) | Envío de la newsletter y emails de marketing, según la herramienta que usemos en cada momento | UE y EE. UU. (ver apartado 5) |
 | **Empresa de transporte** que gestione tu envío | Entregarte el pedido | España |
 | **Asesoría contable y fiscal** | Contabilidad e impuestos | España |
 | **Administraciones públicas, juzgados y tribunales** | Cuando la ley nos obligue | España |
+
+Si pagas con **PayPal**, PayPal trata tus datos como responsable independiente según su propia política de privacidad.
 
 Si pagas con **Klarna**, Klarna trata tus datos además como responsable independiente para decidir sobre la financiación o el pago aplazado y hacer comprobaciones de identidad y solvencia. Te lo explica en su propia política de privacidad, que verás antes de pagar.
 
