@@ -4,7 +4,7 @@
 
 ## 1. Derecho de desistimiento (consumidoras)
 
-Si compras como **consumidora**, para uso particular, tienes derecho a desistir de la compra en un plazo de **14 días naturales** desde el día en que tú, o una persona que indiques que no sea el transportista, recibe el pedido. No tienes que explicar el motivo.
+Nuestros productos están dirigidos a profesionales. Aun así, si compras como **consumidora**, para uso particular, tienes derecho a desistir de la compra en un plazo de **14 días naturales** desde el día en que tú, o una persona que indiques que no sea el transportista, recibe el pedido. No tienes que explicar el motivo.
 
 **Importante: la caja tiene que conservar su precinto intacto.**
 

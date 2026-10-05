@@ -13,7 +13,9 @@
 
 Estas condiciones regulan las compras que hagas en **anitaprofessionalnails.com**. Al hacer un pedido, confirmas que las has leído y las aceptas. Te recomendamos guardarlas o imprimirlas.
 
-Vendemos tanto a **profesionales** (manicuristas, técnicas de uñas y salones que compran para su actividad) como a **consumidoras** (personas que compran para uso particular). Algunos derechos, como el de desistimiento, **son solo para consumidoras**, tal como establece el Real Decreto Legislativo 1/2007 (Texto Refundido de la Ley General para la Defensa de los Consumidores y Usuarios, TRLGDCU). Te lo indicamos en cada caso.
+**Nuestra tienda y nuestros productos están dirigidos a profesionales de las uñas** (manicuristas, técnicas de uñas y salones que compran para su actividad).
+
+Si, aun así, compras como **consumidora** (para uso particular, fuera de una actividad profesional), te asisten todos los derechos que la ley reconoce a las consumidoras, en particular los del Real Decreto Legislativo 1/2007 (Texto Refundido de la Ley General para la Defensa de los Consumidores y Usuarios, TRLGDCU). Algunos derechos, como el de desistimiento, **son solo para consumidoras**. Te lo indicamos en cada caso.
 
 Para comprar debes ser **mayor de 18 años**.
 
@@ -25,6 +27,8 @@ Para comprar debes ser **mayor de 18 años**.
 - **Base, top e imán no están incluidos.**
 - Necesitas una **lámpara UV/LED** para curar cada capa.
 - Es una **edición única de 500 cajas, sin reposición.** Cuando se agoten, no volverán a fabricarse.
+
+- Es un producto pensado para **uso profesional**. Su aplicación requiere conocimientos de esmaltado semipermanente.
 
 Los colores de las fotos pueden variar ligeramente según la pantalla de tu dispositivo. Usa el producto siguiendo siempre las instrucciones y advertencias del envase.
 
