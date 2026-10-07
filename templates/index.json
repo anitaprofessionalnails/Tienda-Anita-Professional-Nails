@@ -9,98 +9,13 @@
  */
 {
   "sections": {
-    "nb_carta_color": {
-      "type": "nb-carta-color",
-      "blocks": {
-        "tono_roseta": {
-          "type": "tono",
-          "settings": {
-            "nombre": "Nebulosa Roseta",
-            "descripcion": "Fucsia frambuesa con micro-shimmer.",
-            "color": "#C61F6B",
-            "color_brillo": "#FF2E9A",
-            "imagen": "shopify://shop_images/04-pincel-nebulosa-roseta.png"
-          }
-        },
-        "tono_capella": {
-          "type": "tono",
-          "settings": {
-            "nombre": "Capella",
-            "descripcion": "Verde lima con micro-shimmer.",
-            "color": "#98B41D",
-            "color_brillo": "#D4FF3A",
-            "imagen": "shopify://shop_images/05-pincel-capella.png"
-          }
-        },
-        "tono_esmeralda": {
-          "type": "tono",
-          "settings": {
-            "nombre": "Nebulosa Esmeralda",
-            "descripcion": "Verde esmeralda con micro-shimmer.",
-            "color": "#1D7B42",
-            "color_brillo": "#2BFF6A",
-            "imagen": "shopify://shop_images/06-pincel-nebulosa-esmeralda.png"
-          }
-        },
-        "tono_andromeda": {
-          "type": "tono",
-          "settings": {
-            "nombre": "Andrómeda",
-            "descripcion": "Azul petróleo con micro-shimmer.",
-            "color": "#15698A",
-            "color_brillo": "#2EC8FF",
-            "imagen": "shopify://shop_images/07-pincel-andromeda.png"
-          }
-        },
-        "tono_orion": {
-          "type": "tono",
-          "settings": {
-            "nombre": "Nebulosa de Orión",
-            "descripcion": "Magenta orquídea con micro-shimmer.",
-            "color": "#D0419E",
-            "color_brillo": "#FF3FD0",
-            "imagen": "shopify://shop_images/08-pincel-nebulosa-de-orion.png"
-          }
-        },
-        "tono_supernova": {
-          "type": "tono",
-          "settings": {
-            "nombre": "Supernova",
-            "descripcion": "Coral intenso con micro-shimmer.",
-            "color": "#D7442E",
-            "color_brillo": "#FF3B2A",
-            "imagen": "shopify://shop_images/09-pincel-supernova.png"
-          }
-        }
-      },
-      "block_order": [
-        "tono_roseta",
-        "tono_capella",
-        "tono_esmeralda",
-        "tono_andromeda",
-        "tono_orion",
-        "tono_supernova"
-      ],
-      "settings": {
-        "titulo": "Seis tonos que brillan en la oscuridad",
-        "tamano_titulo": "h1",
-        "texto": "<p>Toca un tono. Después, apaga la luz.</p>",
-        "modo_inicial": "luz",
-        "mostrar_compra": true,
-        "nota_kit": "Los seis tonos van juntos en la caja. IVA incluido. Base, top e imán no incluidos: usa los de tu mesa.",
-        "color_scheme": "scheme-1",
-        "padding_top": 56,
-        "padding_bottom": 56,
-        "producto": "kit-ojo-de-gato-luminiscente"
-      }
-    },
     "portada": {
       "type": "image-banner",
       "blocks": {
         "titulo": {
           "type": "heading",
           "settings": {
-            "heading": "Drop 001 - Galaxia",
+            "heading": "Drop 001 - Galaxy",
             "heading_size": "h1",
             "nb_es_h1": true
           }
@@ -115,7 +30,7 @@
         "botones": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Descubrir el drop",
+            "button_label_1": "Descubre Galaxy",
             "button_link_1": "shopify://products/kit-ojo-de-gato-luminiscente",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -141,6 +56,91 @@
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": false
+      }
+    },
+    "nb_carta_color": {
+      "type": "nb-carta-color",
+      "blocks": {
+        "tono_roseta": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa Roseta",
+            "descripcion": "Fucsia frambuesa con micro-shimmer.",
+            "color": "#c61f6b",
+            "color_brillo": "#ff2e9a",
+            "imagen": "shopify://shop_images/04-pincel-nebulosa-roseta.png"
+          }
+        },
+        "tono_capella": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Capella",
+            "descripcion": "Verde lima con micro-shimmer.",
+            "color": "#98b41d",
+            "color_brillo": "#d4ff3a",
+            "imagen": "shopify://shop_images/05-pincel-capella.png"
+          }
+        },
+        "tono_esmeralda": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa Esmeralda",
+            "descripcion": "Verde esmeralda con micro-shimmer.",
+            "color": "#1d7b42",
+            "color_brillo": "#2bff6a",
+            "imagen": "shopify://shop_images/06-pincel-nebulosa-esmeralda.png"
+          }
+        },
+        "tono_andromeda": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Andrómeda",
+            "descripcion": "Azul petróleo con micro-shimmer.",
+            "color": "#15698a",
+            "color_brillo": "#2ec8ff",
+            "imagen": "shopify://shop_images/07-pincel-andromeda.png"
+          }
+        },
+        "tono_orion": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Nebulosa de Orión",
+            "descripcion": "Magenta orquídea con micro-shimmer.",
+            "color": "#d0419e",
+            "color_brillo": "#ff3fd0",
+            "imagen": "shopify://shop_images/08-pincel-nebulosa-de-orion.png"
+          }
+        },
+        "tono_supernova": {
+          "type": "tono",
+          "settings": {
+            "nombre": "Supernova",
+            "descripcion": "Coral intenso con micro-shimmer.",
+            "color": "#d7442e",
+            "color_brillo": "#ff3b2a",
+            "imagen": "shopify://shop_images/09-pincel-supernova.png"
+          }
+        }
+      },
+      "block_order": [
+        "tono_roseta",
+        "tono_capella",
+        "tono_esmeralda",
+        "tono_andromeda",
+        "tono_orion",
+        "tono_supernova"
+      ],
+      "settings": {
+        "titulo": "Seis tonos que brillan en la oscuridad",
+        "tamano_titulo": "h1",
+        "texto": "<p>Toca un tono. Después, apaga la luz.</p>",
+        "modo_inicial": "luz",
+        "producto": "kit-ojo-de-gato-luminiscente",
+        "mostrar_compra": true,
+        "nota_kit": "Los seis tonos van juntos en la caja. IVA incluido. Base, top e imán no incluidos: usa los de tu mesa.",
+        "color_scheme": "scheme-1",
+        "padding_top": 56,
+        "padding_bottom": 56
       }
     },
     "que_incluye": {
@@ -231,11 +231,11 @@
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
