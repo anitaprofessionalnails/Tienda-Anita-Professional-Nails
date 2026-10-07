@@ -82,6 +82,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".header.page-width {max-width: 100%; padding-left: 3rem; padding-right: 3rem;}"
+      ],
       "settings": {
         "logo_position": "top-left",
         "mobile_logo_position": "left",
