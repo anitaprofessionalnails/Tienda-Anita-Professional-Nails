@@ -21,7 +21,7 @@ Para comprar debes ser **mayor de 18 años**.
 
 ## 3. El producto
 
-**Drop 001 - Galaxia** es una caja con **6 esmaltes semipermanentes UV/LED de 15 ml** con efecto ojo de gato (magnético) y brillo en la oscuridad. Los tonos son Nebulosa Roseta, Capella, Nebulosa Esmeralda, Andrómeda, Nebulosa de Orión y Supernova.
+**Drop 001 - Galaxy** es una caja con **6 esmaltes semipermanentes UV/LED de 15 ml** con efecto ojo de gato (magnético) y brillo en la oscuridad. Los tonos son Nebulosa Roseta, Capella, Nebulosa Esmeralda, Andrómeda, Nebulosa de Orión y Supernova.
 
 - **Los tonos no se venden por separado:** la caja es un pack indivisible.
 - **Base, top e imán no están incluidos.**

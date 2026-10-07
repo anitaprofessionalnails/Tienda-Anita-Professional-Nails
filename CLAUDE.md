@@ -47,6 +47,7 @@ Documentos de referencia (léelos antes de tocar código):
 - Fotos de marca en `docs/fotos/` (fuera de git; se suben a Shopify, no a `assets/`): bote por tono, pincel macro por tono, bote brillando en oscuridad por tono, caja abierta/cerrada y grupo de 6.
 - Maqueta de referencia validada: https://claude.ai/artifact/34PpY8NivUVGFGwPRrMpyZ
 - Comparador de diseño (elecciones de Miguel, 29/09/2026): https://claude.ai/artifact/FYGkRYDxtwBcSvJPx4qLLi. Se eligió: tipografía C, colores A, botones B, anuncios B (marquee con corazones), cabecera A, menú B (acordeón con miniaturas), tonos A (carta de color en inicio y ficha), ficha B (estrellas, precio grande, cantidad), galería A (miniaturas), sin caja de descuento, confianza B (iconos), desplegables B (+/–).
+- Cambios de Miguel (07/10/2026) que prevalecen sobre el comparador: **logo a la izquierda**, cabecera a todo el ancho y **sin menú principal** (quitado a propósito; no volver a ponerlo sin preguntar). El producto se llama **Drop 001 - Galaxy** (en inglés, nunca "Galaxia").
 
 ## Voz de marca
 **Fuente de verdad: `docs/BRAND.md` (identidad de marca y voz de Miguel Ángel, 02/10/2026). Prevalece sobre lo anterior de este archivo y del PRD en público, voz y claims.** Resumen:

@@ -15,7 +15,7 @@
 - **Personas:** Miguel Ángel (Persona Responsable del producto cosmético, La Puebla de Montalbán, Toledo) y Ana (cofinancian; Ana sale en los vídeos). Historia de los fundadores y origen del nombre "Anita": *No consta*.
 - **Fabricante:** Guangdong Baizhilin (China), esmalte de gel semipermanente UV/LED.
 
-## El producto: Drop 001 - Galaxia
+## El producto: Drop 001 - Galaxy
 - Caja de **6 esmaltes de 15 ml**, efecto **ojo de gato (magnético)** y **brillo en la oscuridad**. Los tonos **no** se venden por separado.
 - **No incluye** base, top ni imán.
 - Tonos: Nebulosa Roseta, Capella, Nebulosa Esmeralda, Andrómeda, Nebulosa de Orión, Supernova. Por qué esos nombres: *No consta* (son astronómicos).
