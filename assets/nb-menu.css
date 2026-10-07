@@ -65,7 +65,7 @@
 .nb-menu-thumb {
   width: 4rem;
   height: 4rem;
-  border-radius: 0.6rem;
+  border-radius: var(--nb-radio);
   object-fit: cover;
   flex: none;
 }
