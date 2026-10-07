@@ -101,7 +101,8 @@
           "type": "heading",
           "settings": {
             "heading": "Drop 001 - Galaxia",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "nb_es_h1": true
           }
         },
         "texto": {
