@@ -88,7 +88,7 @@
       "settings": {
         "logo_position": "top-left",
         "mobile_logo_position": "left",
-        "menu": "main-menu",
+        "menu": "",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": false,
