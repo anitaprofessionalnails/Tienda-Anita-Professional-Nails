@@ -24,7 +24,7 @@
 {%- endstyle -%}
 
 <div class="nb-lema color-{{ section.settings.color_scheme }} gradient">
-  <div class="nb-lema__interior page-width section-{{ section.id }}-padding">
+  <div class="nb-lema__interior page-width section-{{ section.id }}-padding{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     {%- if section.settings.titular != blank -%}
       <h2 class="nb-lema__titular {{ section.settings.tamano_titular }}">{{ section.settings.titular | escape }}</h2>
     {%- endif -%}
